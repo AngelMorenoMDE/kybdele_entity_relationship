@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>4. Como crear relaciones entre entidades</title>
+</head>
+<body>
+<h1>4. Como crear relaciones entre entidades</h1>
+<div style="width:650px; text-align: justify;">
+
+
+Para contextualizar esta ayuda, vamos a modelizar el siguiente caso. Imaginemos que un usuario cualquiera
+tiene 5 ficheros como máximo. Para ello tendremos que realizar los siguientes pasos.
+<h3>4.1. Creamos las entidades</h3>
+
+<p>Lo primero que tenemos que hacer es crear las 2 entidades. Para ello nos vamos 
+al menú <b><i>Palette</i></b>, desplegamos la pestaña <i><b>Entities</b></i> y creamos 2 entidades 
+que en nuestro caso serán <b><i>Usuario</i></b> y <b><i>Fichero</i></b>.
+<p><img src="../images/Relations01.jpg"></p>
+</p>
+
+<br>
+<h3>4.2. Dibujamos la relación</h3>
+
+<p>El siguiente consiste en dibujar el tipo de relación que deseamos crear. 
+Tenemos 3 tipos de relación disponibles que son:
+<ul>
+	<li><b>Regular Relationship. </b></li>
+	<li><b>Weak Relationship dependence in existence</b></li>
+	<li><b>Weak Relationship dependence in identification</b></li>	
+</ul>
+<br>
+En nuestro caso, seleccionaremos <i><b>Regular Relationship</b></i>, la dibujaremos en medio
+de las dos entidades y daremos nombre a dicha relación. Nos quedará algo similar a lo siguiente:
+</p>
+<p><img src="../images/Relations02.jpg"></p>
+
+<br>
+<h3>4.3. Unimos la relación a las entidades</h3>
+
+<p>A continuación tenemos que unir las entidades con la relación. Para ello, seleccionamos en
+el menu <i><b>Relationships</b></i>, el elemento <i><b>Connection Entity-Relationship</b></i> y trazamos
+ dos conexiones desde la relación hacia las entidades. Nos quedará algo similar a la siguiente imagen:</p>
+<p><img src="../images/Relations03.jpg"></p>
+
+<br>
+<h3>4.4. Formateamos los diferentes elementos</h3>
+
+<p>Para que nos quede un diagrama limpio, lo que debemos hacer es ir formateando
+los elementos según los vamos creando. En nuestro caso daremos nombre a los roles de la relación
+y recolocaremos los elementos.</p>
+<p><img src="../images/Relations04.jpg"></p>
+
+<br>
+<h3>4.5. Definimos la cardinalidad de la relación</h3>
+
+<p>En nuestro ejemplo hemos definido que un <i><b>Usuario</b></i> tiene como mucho <i><b>5 Ficheros</b></i>. Para cambiar 
+la cardinalidad de la relación, tendremos que hacer lo siguiente:
+</p>
+<ol>
+		<li>
+		<p>Hacemos click derecho sobre la linea de unión entre la relación <b><i>Tiene</i></b> y 
+		la entidad <b><i>Fichero</i></b>. Seleccionamos <i><b>Show Properties View</b></i>. </p>.
+		<p><img src="../images/Relations05.jpg"></p>
+		</li>
+		<br>
+		<li>
+		<p>Se nos abrirá un visor <i><b>Properties </b></i>(que posiblemente aparezca en la parte inferior de Eclipse). 
+		En el visor <i><b>Properties </b></i>que nos aparece, cambiamos el valor de la propiedad <i><b>Maximum Cardinality</b></i>
+		a valor <b><i>5</i></b>. Nos debería quedar algo similar a lo siguiente:</p>
+		<p><img src="../images/Relations06.jpg"></p>
+		</li>
+		<br>
+		<li>
+		<p>Veremos como de forma automática se cambia la cardinalidad de la relación de <b>1:1</b> a <b>1:5</b>, como aparece en la siguiente imagen:</p>
+		<p><img src="../images/Relations07.jpg"> </p>
+		</li>
+		<br>
+
+</ol>
+<h3>4.6. Creamos un atributo en la relación </h3>
+<p>La creación de atributos es igual que la creación de atributos para entidades. Por ejemplo,
+podemos añadir la fecha en la que el fichero se asocio al usuario, como se puede ver en la 
+siguiente imagen:</p>
+<p><img src="../images/Relations08.jpg"> </p>
+</div>
+</body>
+</html>

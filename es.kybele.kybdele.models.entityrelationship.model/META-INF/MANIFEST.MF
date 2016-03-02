@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Entiry Relationship GMF Diagrammer - Model Plug-In
+Bundle-SymbolicName: es.kybele.kybdele.models.entityrelationship.model;singleton:=true
+Bundle-Version: 0.4.0.stable
+Bundle-ClassPath: .
+Bundle-Vendor: Grupo de Investigación Kybele
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Export-Package: entityrelationship,
+ entityrelationship.impl,
+ entityrelationship.util
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.emf.ecore;visibility:=reexport
+Bundle-ActivationPolicy: lazy

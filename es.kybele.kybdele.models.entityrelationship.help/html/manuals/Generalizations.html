@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>5. Como crear Generalizaciones entre entidades</title>
+</head>
+<body>
+<h1>5. Como crear Generalizaciones entre entidades</h1>
+<div style="width:650px; text-align: justify;">
+
+
+Para contextualizar esta ayuda, vamos a modelizar el siguiente caso. Imaginemos que una entidad
+Coche, una entidad Moto, y una entidad Autobús generalizan a la entidad Transporte.
+
+<h3>5.1. Creamos las entidades</h3>
+
+<p>Lo primero que tenemos que hacer es crear las 4 entidades. Para ello nos vamos 
+al menú <b><i>Palette</i></b>, desplegamos la pestaña <i><b>Entities</b></i> y creamos 4 entidades 
+que en nuestro caso serán <b><i>Transporte, Coche, Moto y Autobús</i></b>.
+<p><img src="../images/Generalizations01.jpg"></p>
+</p>
+
+<br>
+<h3>5.2. Dibujamos la generalización</h3>
+
+<p>En este paso procedemos a dibujar el tipo de generalización que deseamos crear. 
+Tenemos 4 tipos de generalización disponibles que son:
+<p><img src="../images/Generalizations02.jpg"></p>
+<br>
+En nuestro caso, seleccionaremos <i><b>Generalization Total and Overlapped</b></i>, la dibujaremos en medio
+de las entidades.. Nos quedará algo similar a lo siguiente:
+</p>
+<p><img src="../images/Generalizations03.jpg"></p>
+
+<br>
+<h3>5.3. Unimos la generalización a la entidad la entidad especializada</h3>
+
+<p>Ahora uniremos a la generalización con la entidad <b><i>Transporte</i></b>. Para ello, seleccionamos en
+el menu <i><b>Generalizations</b></i>, el elemento <i><b>Connection Superclass Generalization</b></i> y trazamos
+una conexion desde la generalización hacia la entidade especializada <b><i>Transporte</i></b>. Nos quedará algo 
+similar a la siguiente imagen:</p>
+<p><img src="../images/Generalizations04.jpg"></p>
+
+<br>
+<h3>5.4. Unimos la generalización a las entidades especializadas</h3>
+
+<p>A continuación tenemos que unir a generalización las entidades especialidadas <b><i>Coche, Moto y Autobús</i></b> . Para ello, seleccionamos en
+el menu <i><b>Generalizations</b></i>, el elemento <i><b>Connection Subclass Generalization</b></i> y trazamos
+ 3 conexiones desde la generalización hacia las entidades. Nos quedará algo similar a la siguiente imagen:</p>
+<p><img src="../images/Generalizations05.jpg"></p>
+
+
+<br>
+</div>
+</body>
+</html>

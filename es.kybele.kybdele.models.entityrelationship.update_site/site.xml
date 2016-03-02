@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/es.kybele.kybdele.models.entityrelationship.features_0.0.4.stable.jar" id="es.kybele.kybdele.models.entityrelationship.features" version="0.0.4.stable">
+      <category name="es.kybele.kybdele.models.entityrelationship.updatesite.main_category"/>
+   </feature>
+   <category-def name="es.kybele.kybdele.models.entityrelationship.updatesite.main_category" label="Entiry Relationship GMF Diagrammer"/>
+</site>

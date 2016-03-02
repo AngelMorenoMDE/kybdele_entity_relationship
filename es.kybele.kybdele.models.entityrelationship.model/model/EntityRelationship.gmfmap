@@ -1,0 +1,1196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gmfmap:Mapping
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:gmfmap="http://www.eclipse.org/gmf/2008/mappings"
+    xmlns:gmftool="http://www.eclipse.org/gmf/2005/ToolDefinition">
+  <nodes>
+    <containmentFeature
+        href="EntityRelationship.ecore#//Entity_Relationship_Model/ERM_Has_E"/>
+    <ownedChild>
+      <domainMetaElement
+          href="EntityRelationship.ecore#//Entity"/>
+      <domainSpecialization
+          body="self.type_entity = TypeEntity::Regular"/>
+      <domainInitializer
+          xsi:type="gmfmap:FeatureSeqInitializer">
+        <initializers
+            xsi:type="gmfmap:FeatureValueSpec">
+          <feature
+              xsi:type="ecore:EAttribute"
+              href="EntityRelationship.ecore#//Entity/type_entity"/>
+          <value
+              body="TypeEntity::Regular"/>
+        </initializers>
+      </domainInitializer>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="EntityRelationship.gmfgraph#EntityName_entity"/>
+        <features
+            href="EntityRelationship.ecore#//Entity/name_entity"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="EntityRelationship.gmftool#//@palette/@tools.0/@tools.0"/>
+      <diagramNode
+          href="EntityRelationship.gmfgraph#Entity"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="EntityRelationship.ecore#//Entity_Relationship_Model/ERM_Has_E"/>
+    <ownedChild>
+      <domainMetaElement
+          href="EntityRelationship.ecore#//Entity"/>
+      <domainSpecialization
+          body="self.type_entity = TypeEntity::Weak"/>
+      <domainInitializer
+          xsi:type="gmfmap:FeatureSeqInitializer">
+        <initializers
+            xsi:type="gmfmap:FeatureValueSpec">
+          <feature
+              xsi:type="ecore:EAttribute"
+              href="EntityRelationship.ecore#//Entity/type_entity"/>
+          <value
+              body="TypeEntity::Weak"/>
+        </initializers>
+      </domainInitializer>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="EntityRelationship.gmfgraph#WeakEntityName_entity"/>
+        <features
+            href="EntityRelationship.ecore#//Entity/name_entity"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="EntityRelationship.gmftool#//@palette/@tools.0/@tools.1"/>
+      <diagramNode
+          href="EntityRelationship.gmfgraph#WeakEntity"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="EntityRelationship.ecore#//Entity_Relationship_Model/ERM_Has_E"/>
+    <ownedChild>
+      <domainMetaElement
+          href="EntityRelationship.ecore#//Relationship"/>
+      <domainSpecialization
+          body="self.type_relationship = TypeRelationship::Regular"/>
+      <domainInitializer
+          xsi:type="gmfmap:FeatureSeqInitializer">
+        <initializers
+            xsi:type="gmfmap:FeatureValueSpec">
+          <feature
+              xsi:type="ecore:EAttribute"
+              href="EntityRelationship.ecore#//Relationship/type_relationship"/>
+          <value
+              body="TypeRelationship::Regular"/>
+        </initializers>
+      </domainInitializer>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="EntityRelationship.gmfgraph#RelationshipName_relationship"/>
+        <features
+            href="EntityRelationship.ecore#//Relationship/name_relationship"/>
+      </labelMappings>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping"
+          viewPattern="">
+        <diagramLabel
+            href="EntityRelationship.gmfgraph#CardinalityRelationship"/>
+        <features
+            href="EntityRelationship.ecore#//Relationship/cardinality"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="EntityRelationship.gmftool#//@palette/@tools.1/@tools.0"/>
+      <diagramNode
+          href="EntityRelationship.gmfgraph#Relationship"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="EntityRelationship.ecore#//Entity_Relationship_Model/ERM_Has_E"/>
+    <ownedChild>
+      <domainMetaElement
+          href="EntityRelationship.ecore#//Relationship"/>
+      <domainSpecialization
+          body="self.type_relationship = TypeRelationship::Weak_dependence_in_existence"/>
+      <domainInitializer
+          xsi:type="gmfmap:FeatureSeqInitializer">
+        <initializers
+            xsi:type="gmfmap:FeatureValueSpec">
+          <feature
+              xsi:type="ecore:EAttribute"
+              href="EntityRelationship.ecore#//Relationship/type_relationship"/>
+          <value
+              body="TypeRelationship::Weak_dependence_in_existence"/>
+        </initializers>
+      </domainInitializer>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="EntityRelationship.gmfgraph#WeakExistenceRelationshipName_relationship"/>
+        <features
+            href="EntityRelationship.ecore#//Relationship/name_relationship"/>
+      </labelMappings>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping"
+          viewPattern="">
+        <diagramLabel
+            href="EntityRelationship.gmfgraph#CardinalityRelationship"/>
+        <features
+            href="EntityRelationship.ecore#//Relationship/cardinality"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="EntityRelationship.gmftool#//@palette/@tools.1/@tools.1"/>
+      <diagramNode
+          href="EntityRelationship.gmfgraph#WeakExistenceRelationship"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="EntityRelationship.ecore#//Entity_Relationship_Model/ERM_Has_E"/>
+    <ownedChild>
+      <domainMetaElement
+          href="EntityRelationship.ecore#//Relationship"/>
+      <domainSpecialization
+          body="self.type_relationship = TypeRelationship::Weak_dependence_in_identification"/>
+      <domainInitializer
+          xsi:type="gmfmap:FeatureSeqInitializer">
+        <initializers
+            xsi:type="gmfmap:FeatureValueSpec">
+          <feature
+              xsi:type="ecore:EAttribute"
+              href="EntityRelationship.ecore#//Relationship/type_relationship"/>
+          <value
+              body="TypeRelationship::Weak_dependence_in_identification"/>
+        </initializers>
+      </domainInitializer>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="EntityRelationship.gmfgraph#WeakIdentificationRelationshipName_relationship"/>
+        <features
+            href="EntityRelationship.ecore#//Relationship/name_relationship"/>
+      </labelMappings>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping"
+          viewPattern="">
+        <diagramLabel
+            href="EntityRelationship.gmfgraph#CardinalityRelationship"/>
+        <features
+            href="EntityRelationship.ecore#//Relationship/cardinality"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="EntityRelationship.gmftool#//@palette/@tools.1/@tools.2"/>
+      <diagramNode
+          href="EntityRelationship.gmfgraph#WeakIdentificationRelationship"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="EntityRelationship.ecore#//Entity_Relationship_Model/ERM_Has_At"/>
+    <ownedChild>
+      <domainMetaElement
+          href="EntityRelationship.ecore#//Attribute"/>
+      <domainSpecialization
+          body="self.identifier = TypeIdentifier::NoIdentifier"/>
+      <domainInitializer
+          xsi:type="gmfmap:FeatureSeqInitializer">
+        <initializers
+            xsi:type="gmfmap:FeatureValueSpec">
+          <feature
+              xsi:type="ecore:EAttribute"
+              href="EntityRelationship.ecore#//Attribute/identifier"/>
+          <value
+              body="TypeIdentifier::NoIdentifier"/>
+        </initializers>
+      </domainInitializer>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="EntityRelationship.gmfgraph#AttributeName_attribute"/>
+        <features
+            href="EntityRelationship.ecore#//Attribute/name_attribute"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="EntityRelationship.gmftool#//@palette/@tools.3/@tools.2"/>
+      <diagramNode
+          href="EntityRelationship.gmfgraph#Attribute"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="EntityRelationship.ecore#//Entity_Relationship_Model/ERM_Has_At"/>
+    <ownedChild>
+      <domainMetaElement
+          href="EntityRelationship.ecore#//Attribute"/>
+      <domainSpecialization
+          body="self.identifier = TypeIdentifier::AlternativeIdentifier"/>
+      <domainInitializer
+          xsi:type="gmfmap:FeatureSeqInitializer">
+        <initializers
+            xsi:type="gmfmap:FeatureValueSpec">
+          <feature
+              xsi:type="ecore:EAttribute"
+              href="EntityRelationship.ecore#//Attribute/identifier"/>
+          <value
+              body="TypeIdentifier::AlternativeIdentifier"/>
+        </initializers>
+      </domainInitializer>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="EntityRelationship.gmfgraph#AttributeName_attribute"/>
+        <features
+            href="EntityRelationship.ecore#//Attribute/name_attribute"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="EntityRelationship.gmftool#//@palette/@tools.3/@tools.1"/>
+      <diagramNode
+          href="EntityRelationship.gmfgraph#AlternativeAttribute"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="EntityRelationship.ecore#//Entity_Relationship_Model/ERM_Has_At"/>
+    <ownedChild>
+      <domainMetaElement
+          href="EntityRelationship.ecore#//Attribute"/>
+      <domainSpecialization
+          body="self.identifier = TypeIdentifier::PrimaryIdentifier"/>
+      <domainInitializer
+          xsi:type="gmfmap:FeatureSeqInitializer">
+        <initializers
+            xsi:type="gmfmap:FeatureValueSpec">
+          <feature
+              xsi:type="ecore:EAttribute"
+              href="EntityRelationship.ecore#//Attribute/identifier"/>
+          <value
+              body="TypeIdentifier::PrimaryIdentifier"/>
+        </initializers>
+      </domainInitializer>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="EntityRelationship.gmfgraph#AttributeName_attribute"/>
+        <features
+            href="EntityRelationship.ecore#//Attribute/name_attribute"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="EntityRelationship.gmftool#//@palette/@tools.3/@tools.0"/>
+      <diagramNode
+          href="EntityRelationship.gmfgraph#PrimaryAttribute"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <childrenFeature
+        href="EntityRelationship.ecore#//Attribute/attributes_composites"/>
+    <ownedChild>
+      <domainMetaElement
+          href="EntityRelationship.ecore#//Attribute_Composite"/>
+      <domainSpecialization
+          body="self.identifier_at_composite = TypeIdentifier::NoIdentifier"/>
+      <domainInitializer
+          xsi:type="gmfmap:FeatureSeqInitializer">
+        <initializers
+            xsi:type="gmfmap:FeatureValueSpec">
+          <feature
+              xsi:type="ecore:EAttribute"
+              href="EntityRelationship.ecore#//Attribute_Composite/identifier_at_composite"/>
+          <value
+              body="TypeIdentifier::NoIdentifier"/>
+        </initializers>
+      </domainInitializer>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="EntityRelationship.gmfgraph#CompositeAttributeName_Compositeattribute"/>
+        <features
+            href="EntityRelationship.ecore#//Attribute_Composite/name_at_composite"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="EntityRelationship.gmftool#//@palette/@tools.3/@tools.3"/>
+      <diagramNode
+          href="EntityRelationship.gmfgraph#CompositeAttribute"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="EntityRelationship.ecore#//Entity_Relationship_Model/ERM_Has_G"/>
+    <ownedChild>
+      <domainMetaElement
+          href="EntityRelationship.ecore#//Generalization"/>
+      <domainSpecialization
+          body="self.restriction_inheritance_1 = TypeRestrictionInheritance1::Partial and&#xD;&#xA;self.restriction_inheritance_2 = TypeRestrictionInheritance2::Overlapped"/>
+      <domainInitializer
+          xsi:type="gmfmap:FeatureSeqInitializer">
+        <initializers
+            xsi:type="gmfmap:FeatureValueSpec">
+          <feature
+              xsi:type="ecore:EAttribute"
+              href="EntityRelationship.ecore#//Generalization/restriction_inheritance_1"/>
+          <value
+              body="TypeRestrictionInheritance1::Partial"/>
+        </initializers>
+        <initializers
+            xsi:type="gmfmap:FeatureValueSpec">
+          <feature
+              xsi:type="ecore:EAttribute"
+              href="EntityRelationship.ecore#//Generalization/restriction_inheritance_2"/>
+          <value
+              body="TypeRestrictionInheritance2::Overlapped"/>
+        </initializers>
+      </domainInitializer>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="EntityRelationship.gmftool#//@palette/@tools.2/@tools.0"/>
+      <diagramNode
+          href="EntityRelationship.gmfgraph#Generalization"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="EntityRelationship.ecore#//Entity_Relationship_Model/ERM_Has_G"/>
+    <ownedChild>
+      <domainMetaElement
+          href="EntityRelationship.ecore#//Generalization"/>
+      <domainSpecialization
+          body="self.restriction_inheritance_1 = TypeRestrictionInheritance1::Total and&#xD;&#xA;self.restriction_inheritance_2 = TypeRestrictionInheritance2::Overlapped"/>
+      <domainInitializer
+          xsi:type="gmfmap:FeatureSeqInitializer">
+        <initializers
+            xsi:type="gmfmap:FeatureValueSpec">
+          <feature
+              xsi:type="ecore:EAttribute"
+              href="EntityRelationship.ecore#//Generalization/restriction_inheritance_1"/>
+          <value
+              body="TypeRestrictionInheritance1::Total"/>
+        </initializers>
+        <initializers
+            xsi:type="gmfmap:FeatureValueSpec">
+          <feature
+              xsi:type="ecore:EAttribute"
+              href="EntityRelationship.ecore#//Generalization/restriction_inheritance_2"/>
+          <value
+              body="TypeRestrictionInheritance2::Overlapped"/>
+        </initializers>
+      </domainInitializer>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="EntityRelationship.gmftool#//@palette/@tools.2/@tools.1"/>
+      <diagramNode
+          href="EntityRelationship.gmfgraph#Generalization2"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="EntityRelationship.ecore#//Entity_Relationship_Model/ERM_Has_G"/>
+    <ownedChild>
+      <domainMetaElement
+          href="EntityRelationship.ecore#//Generalization"/>
+      <domainSpecialization
+          body="self.restriction_inheritance_1 = TypeRestrictionInheritance1::Partial and&#xD;&#xA;self.restriction_inheritance_2 = TypeRestrictionInheritance2::Exclusive"/>
+      <domainInitializer
+          xsi:type="gmfmap:FeatureSeqInitializer">
+        <initializers
+            xsi:type="gmfmap:FeatureValueSpec">
+          <feature
+              xsi:type="ecore:EAttribute"
+              href="EntityRelationship.ecore#//Generalization/restriction_inheritance_1"/>
+          <value
+              body="TypeRestrictionInheritance1::Partial"/>
+        </initializers>
+        <initializers
+            xsi:type="gmfmap:FeatureValueSpec">
+          <feature
+              xsi:type="ecore:EAttribute"
+              href="EntityRelationship.ecore#//Generalization/restriction_inheritance_2"/>
+          <value
+              body="TypeRestrictionInheritance2::Exclusive"/>
+        </initializers>
+      </domainInitializer>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="EntityRelationship.gmftool#//@palette/@tools.2/@tools.2"/>
+      <diagramNode
+          href="EntityRelationship.gmfgraph#Generalization3"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="EntityRelationship.ecore#//Entity_Relationship_Model/ERM_Has_G"/>
+    <ownedChild>
+      <domainMetaElement
+          href="EntityRelationship.ecore#//Generalization"/>
+      <domainSpecialization
+          body="self.restriction_inheritance_1 = TypeRestrictionInheritance1::Total and&#xD;&#xA;self.restriction_inheritance_2 = TypeRestrictionInheritance2::Exclusive"/>
+      <domainInitializer
+          xsi:type="gmfmap:FeatureSeqInitializer">
+        <initializers
+            xsi:type="gmfmap:FeatureValueSpec">
+          <feature
+              xsi:type="ecore:EAttribute"
+              href="EntityRelationship.ecore#//Generalization/restriction_inheritance_1"/>
+          <value
+              body="TypeRestrictionInheritance1::Total"/>
+        </initializers>
+        <initializers
+            xsi:type="gmfmap:FeatureValueSpec">
+          <feature
+              xsi:type="ecore:EAttribute"
+              href="EntityRelationship.ecore#//Generalization/restriction_inheritance_2"/>
+          <value
+              body="TypeRestrictionInheritance2::Exclusive"/>
+        </initializers>
+      </domainInitializer>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="EntityRelationship.gmftool#//@palette/@tools.2/@tools.3"/>
+      <diagramNode
+          href="EntityRelationship.gmfgraph#Generalization4"/>
+    </ownedChild>
+  </nodes>
+  <links>
+    <domainMetaElement
+        href="EntityRelationship.ecore#//Connection_Generalization_Entity"/>
+    <labelMappings
+        xsi:type="gmfmap:FeatureLabelMapping"
+        readOnly="true"
+        viewPattern="({0},{1})"
+        editorPattern="{0} : {1}"
+        editPattern="{0} : {1}">
+      <diagramLabel
+          href="EntityRelationship.gmfgraph#Connection_Generalization_Entity_cardinality"/>
+      <features
+          href="EntityRelationship.ecore#//Connection_Generalization_Entity/minimum_cardinality"/>
+      <features
+          href="EntityRelationship.ecore#//Connection_Generalization_Entity/maximum_cardinality"/>
+    </labelMappings>
+    <containmentFeature
+        href="EntityRelationship.ecore#//Entity_Relationship_Model/ERM_Has_Gen"/>
+    <tool
+        xsi:type="gmftool:CreationTool"
+        href="EntityRelationship.gmftool#//@palette/@tools.2/@tools.6"/>
+    <diagramLink
+        href="EntityRelationship.gmfgraph#Connection_Generalization_Entity"/>
+    <sourceMetaFeature
+        xsi:type="ecore:EReference"
+        href="EntityRelationship.ecore#//Connection_Generalization_Entity/Connection_Generalization"/>
+    <linkMetaFeature
+        xsi:type="ecore:EReference"
+        href="EntityRelationship.ecore#//Connection_Generalization_Entity/Connection_Entity"/>
+  </links>
+  <links>
+    <domainMetaElement
+        href="EntityRelationship.ecore#//Connection_Relationship2Entity"/>
+    <labelMappings
+        xsi:type="gmfmap:FeatureLabelMapping">
+      <diagramLabel
+          href="EntityRelationship.gmfgraph#Connection_Relationship2EntityRole"/>
+      <features
+          href="EntityRelationship.ecore#//Connection_EntityRelationship/role"/>
+    </labelMappings>
+    <labelMappings
+        xsi:type="gmfmap:FeatureLabelMapping"
+        readOnly="true"
+        viewPattern="({0},{1})"
+        editorPattern="{0} : {1}"
+        editPattern="{0} : {1}">
+      <diagramLabel
+          href="EntityRelationship.gmfgraph#Connection_Relationship2Entity_cardinality"/>
+      <features
+          href="EntityRelationship.ecore#//Connection_EntityRelationship/minimum_cardinality"/>
+      <features
+          href="EntityRelationship.ecore#//Connection_EntityRelationship/maximum_cardinality"/>
+    </labelMappings>
+    <containmentFeature
+        href="EntityRelationship.ecore#//Entity_Relationship_Model/ERM_Has_ConnectionRelationship2Entity"/>
+    <tool
+        xsi:type="gmftool:CreationTool"
+        href="EntityRelationship.gmftool#//@palette/@tools.1/@tools.4"/>
+    <diagramLink
+        href="EntityRelationship.gmfgraph#Connection_Relationship2Entity"/>
+    <sourceMetaFeature
+        xsi:type="ecore:EReference"
+        href="EntityRelationship.ecore#//Connection_Relationship2Entity/source_relationship"/>
+    <linkMetaFeature
+        xsi:type="ecore:EReference"
+        href="EntityRelationship.ecore#//Connection_Relationship2Entity/target_entity"/>
+    <creationConstraints>
+      <sourceEnd
+          body="if (&#xD;&#xA;&#x9;&#x9;(&#xD;&#xA;&#x9;&#x9;&#x9;(&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;Connection_Relationship2Entity.allInstances()->select(c:Connection_Relationship2Entity|c.source_relationship = self and c.target_entity = oppositeEnd)->size()&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;Connection_Entity2Relationship.allInstances()->select(c:Connection_Entity2Relationship|c.source_entity = oppositeEnd and c.target_relationship = self)->size()&#xD;&#xA;&#x9;&#x9;&#x9;)&#xD;&#xA;&#x9;&#x9;&#x9;>&#xD;&#xA;&#x9;&#x9;&#x9;1&#xD;&#xA;&#x9;&#x9;) &#xD;&#xA;&#x9;)&#xD;&#xA;&#x9;then&#xD;&#xA;&#x9;(&#xD;&#xA;&#x9;&#x9;not oclIsKindOf(Relationship)&#xD;&#xA;&#x9;)&#xD;&#xA;&#x9;else&#xD;&#xA;&#x9;(&#xD;&#xA;&#x9;&#x9;oclIsKindOf(Relationship)&#xD;&#xA;&#x9;)&#xD;&#xA;endif"/>
+      <targetEnd
+          body="if (&#xD;&#xA;&#x9;&#x9;(&#xD;&#xA;&#x9;&#x9;&#x9;(&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;Connection_Relationship2Entity.allInstances()->select(c:Connection_Relationship2Entity|c.source_relationship = oppositeEnd and c.target_entity = self)->size()&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;Connection_Entity2Relationship.allInstances()->select(c:Connection_Entity2Relationship|c.source_entity = self and c.target_relationship = oppositeEnd)->size()&#xD;&#xA;&#x9;&#x9;&#x9;)&#xD;&#xA;&#x9;&#x9;&#x9;>&#xD;&#xA;&#x9;&#x9;&#x9;1&#xD;&#xA;&#x9;&#x9;)&#xD;&#xA;&#x9;)&#xD;&#xA;&#x9;then&#xD;&#xA;&#x9;(&#xD;&#xA;&#x9;&#x9;not oclIsKindOf(Entity)&#xD;&#xA;&#x9;)&#xD;&#xA;&#x9;else&#xD;&#xA;&#x9;(&#xD;&#xA;&#x9;&#x9;oclIsKindOf(Entity)&#xD;&#xA;&#x9;)&#xD;&#xA;endif"/>
+    </creationConstraints>
+  </links>
+  <links>
+    <domainMetaElement
+        href="EntityRelationship.ecore#//Connection_Entity2Relationship"/>
+    <labelMappings
+        xsi:type="gmfmap:FeatureLabelMapping">
+      <diagramLabel
+          href="EntityRelationship.gmfgraph#Connection_Entity2RelationshipRole"/>
+      <features
+          href="EntityRelationship.ecore#//Connection_EntityRelationship/role"/>
+    </labelMappings>
+    <labelMappings
+        xsi:type="gmfmap:FeatureLabelMapping"
+        readOnly="true"
+        viewPattern="({0},{1})"
+        editorPattern="{0} : {1}"
+        editPattern="{0} : {1}">
+      <diagramLabel
+          href="EntityRelationship.gmfgraph#Connection_Entity2Relationship_cardinality"/>
+      <features
+          href="EntityRelationship.ecore#//Connection_EntityRelationship/minimum_cardinality"/>
+      <features
+          href="EntityRelationship.ecore#//Connection_EntityRelationship/maximum_cardinality"/>
+    </labelMappings>
+    <containmentFeature
+        href="EntityRelationship.ecore#//Entity_Relationship_Model/ERM_Has_ConnectionEntity2Relationship"/>
+    <tool
+        xsi:type="gmftool:CreationTool"
+        href="EntityRelationship.gmftool#//@palette/@tools.1/@tools.4"/>
+    <diagramLink
+        href="EntityRelationship.gmfgraph#Connection_Entity2Relationship"/>
+    <sourceMetaFeature
+        xsi:type="ecore:EReference"
+        href="EntityRelationship.ecore#//Connection_Entity2Relationship/source_entity"/>
+    <linkMetaFeature
+        xsi:type="ecore:EReference"
+        href="EntityRelationship.ecore#//Connection_Entity2Relationship/target_relationship"/>
+    <creationConstraints>
+      <sourceEnd
+          body="if (&#xD;&#xA;&#x9;&#x9;(&#xD;&#xA;&#x9;&#x9;&#x9;(&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;Connection_Relationship2Entity.allInstances()->select(c:Connection_Relationship2Entity|c.source_relationship = oppositeEnd and c.target_entity = self)->size()&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;Connection_Entity2Relationship.allInstances()->select(c:Connection_Entity2Relationship|c.source_entity = self and c.target_relationship = oppositeEnd)->size()&#xD;&#xA;&#x9;&#x9;&#x9;)&#xD;&#xA;&#x9;&#x9;&#x9;>&#xD;&#xA;&#x9;&#x9;&#x9;1&#xD;&#xA;&#x9;&#x9;)&#xD;&#xA;&#x9;)&#xD;&#xA;&#x9;then&#xD;&#xA;&#x9;(&#xD;&#xA;&#x9;&#x9;not oclIsKindOf(Entity)&#xD;&#xA;&#x9;)&#xD;&#xA;&#x9;else&#xD;&#xA;&#x9;(&#xD;&#xA;&#x9;&#x9;oclIsKindOf(Entity)&#xD;&#xA;&#x9;)&#xD;&#xA;endif"/>
+      <targetEnd
+          body="if (&#xD;&#xA;&#x9;&#x9;(&#xD;&#xA;&#x9;&#x9;&#x9;(&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;Connection_Relationship2Entity.allInstances()->select(c:Connection_Relationship2Entity|c.source_relationship = self and c.target_entity = oppositeEnd)->size()&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;+&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;Connection_Entity2Relationship.allInstances()->select(c:Connection_Entity2Relationship|c.source_entity = oppositeEnd and c.target_relationship = self)->size()&#xD;&#xA;&#x9;&#x9;&#x9;)&#xD;&#xA;&#x9;&#x9;&#x9;>&#xD;&#xA;&#x9;&#x9;&#x9;1&#xD;&#xA;&#x9;&#x9;)&#xD;&#xA;&#x9;)&#xD;&#xA;&#x9;then&#xD;&#xA;&#x9;(&#xD;&#xA;&#x9;&#x9;not oclIsKindOf(Relationship)&#xD;&#xA;&#x9;)&#xD;&#xA;&#x9;else&#xD;&#xA;&#x9;(&#xD;&#xA;&#x9;&#x9;oclIsKindOf(Relationship)&#xD;&#xA;&#x9;)&#xD;&#xA;endif"/>
+    </creationConstraints>
+  </links>
+  <links>
+    <domainMetaElement
+        href="EntityRelationship.ecore#//Connection_With_Attribute"/>
+    <domainSpecialization
+        body="self.type_attribute = TypeAttribute::Normal"/>
+    <domainInitializer
+        xsi:type="gmfmap:FeatureSeqInitializer">
+      <initializers
+          xsi:type="gmfmap:FeatureValueSpec">
+        <feature
+            xsi:type="ecore:EAttribute"
+            href="EntityRelationship.ecore#//Connection_With_Attribute/type_attribute"/>
+        <value
+            body="TypeAttribute::Normal"/>
+      </initializers>
+    </domainInitializer>
+    <containmentFeature
+        href="EntityRelationship.ecore#//Entity_Relationship_Model/ERM_Has_CEA"/>
+    <tool
+        xsi:type="gmftool:CreationTool"
+        href="EntityRelationship.gmftool#//@palette/@tools.3/@tools.5"/>
+    <diagramLink
+        href="EntityRelationship.gmfgraph#Connection_With_Attribute"/>
+    <sourceMetaFeature
+        xsi:type="ecore:EReference"
+        href="EntityRelationship.ecore#//Connection_With_Attribute/element"/>
+    <linkMetaFeature
+        xsi:type="ecore:EReference"
+        href="EntityRelationship.ecore#//Connection_With_Attribute/connection_attribute"/>
+    <creationConstraints>
+      <targetEnd
+          body="if (self.connected->size() &lt; 1) then (oclIsKindOf(Attribute)) else (not oclIsKindOf(Attribute)) endif and if (oppositeEnd.oclIsKindOf(Relationship) or oppositeEnd.oclIsKindOf(Generalization)) then (self.identifier &lt;> TypeIdentifier::PrimaryIdentifier and self.identifier &lt;> TypeIdentifier::AlternativeIdentifier) else (self.identifier = TypeIdentifier::PrimaryIdentifier or self.identifier = TypeIdentifier::AlternativeIdentifier or self.identifier = TypeIdentifier::NoIdentifier) endif"/>
+    </creationConstraints>
+  </links>
+  <links>
+    <domainMetaElement
+        href="EntityRelationship.ecore#//Connection_With_Attribute"/>
+    <domainSpecialization
+        body="self.type_attribute = TypeAttribute::Optional"/>
+    <domainInitializer
+        xsi:type="gmfmap:FeatureSeqInitializer">
+      <initializers
+          xsi:type="gmfmap:FeatureValueSpec">
+        <feature
+            xsi:type="ecore:EAttribute"
+            href="EntityRelationship.ecore#//Connection_With_Attribute/type_attribute"/>
+        <value
+            body="TypeAttribute::Optional"/>
+      </initializers>
+    </domainInitializer>
+    <containmentFeature
+        href="EntityRelationship.ecore#//Entity_Relationship_Model/ERM_Has_CEA"/>
+    <tool
+        xsi:type="gmftool:CreationTool"
+        href="EntityRelationship.gmftool#//@palette/@tools.3/@tools.6"/>
+    <diagramLink
+        href="EntityRelationship.gmfgraph#Connection_With_OptionalAttribute"/>
+    <sourceMetaFeature
+        xsi:type="ecore:EReference"
+        href="EntityRelationship.ecore#//Connection_With_Attribute/element"/>
+    <linkMetaFeature
+        xsi:type="ecore:EReference"
+        href="EntityRelationship.ecore#//Connection_With_Attribute/connection_attribute"/>
+    <creationConstraints>
+      <targetEnd
+          body="if (self.connected->size() &lt; 1) then (oclIsKindOf(Attribute)) else (not oclIsKindOf(Attribute)) endif and if (oppositeEnd.oclIsKindOf(Relationship) or oppositeEnd.oclIsKindOf(Generalization)) then (self.identifier &lt;> TypeIdentifier::PrimaryIdentifier and self.identifier &lt;> TypeIdentifier::AlternativeIdentifier) else (self.identifier = TypeIdentifier::PrimaryIdentifier or self.identifier = TypeIdentifier::AlternativeIdentifier or self.identifier = TypeIdentifier::NoIdentifier) endif and if(self.identifier = TypeIdentifier::PrimaryIdentifier or self.identifier = TypeIdentifier::AlternativeIdentifier) then (not oclIsKindOf(Attribute)) else (oclIsKindOf(Attribute)) endif"/>
+    </creationConstraints>
+  </links>
+  <links>
+    <domainMetaElement
+        href="EntityRelationship.ecore#//Connection_With_Attribute"/>
+    <domainSpecialization
+        body="self.type_attribute = TypeAttribute::Composite"/>
+    <domainInitializer
+        xsi:type="gmfmap:FeatureSeqInitializer">
+      <initializers
+          xsi:type="gmfmap:FeatureValueSpec">
+        <feature
+            xsi:type="ecore:EAttribute"
+            href="EntityRelationship.ecore#//Connection_With_Attribute/type_attribute"/>
+        <value
+            body="TypeAttribute::Composite"/>
+      </initializers>
+    </domainInitializer>
+    <containmentFeature
+        href="EntityRelationship.ecore#//Entity_Relationship_Model/ERM_Has_CEA"/>
+    <tool
+        xsi:type="gmftool:CreationTool"
+        href="EntityRelationship.gmftool#//@palette/@tools.3/@tools.7"/>
+    <diagramLink
+        href="EntityRelationship.gmfgraph#Connection_With_CompositeAttribute"/>
+    <sourceMetaFeature
+        xsi:type="ecore:EReference"
+        href="EntityRelationship.ecore#//Connection_With_Attribute/element"/>
+    <linkMetaFeature
+        xsi:type="ecore:EReference"
+        href="EntityRelationship.ecore#//Connection_With_Attribute/connection_attribute"/>
+    <creationConstraints>
+      <targetEnd
+          body="if (self.connected->size() &lt; 1) then (oclIsKindOf(Attribute)) else (not oclIsKindOf(Attribute)) endif and if (oppositeEnd.oclIsKindOf(Relationship) or oppositeEnd.oclIsKindOf(Generalization)) then (self.identifier &lt;> TypeIdentifier::PrimaryIdentifier and self.identifier &lt;> TypeIdentifier::AlternativeIdentifier) else (self.identifier = TypeIdentifier::PrimaryIdentifier or self.identifier = TypeIdentifier::AlternativeIdentifier or self.identifier = TypeIdentifier::NoIdentifier) endif"/>
+    </creationConstraints>
+  </links>
+  <links>
+    <domainMetaElement
+        href="EntityRelationship.ecore#//Connection_With_Attribute"/>
+    <domainSpecialization
+        body="self.type_attribute = TypeAttribute::Derived"/>
+    <domainInitializer
+        xsi:type="gmfmap:FeatureSeqInitializer">
+      <initializers
+          xsi:type="gmfmap:FeatureValueSpec">
+        <feature
+            xsi:type="ecore:EAttribute"
+            href="EntityRelationship.ecore#//Connection_With_Attribute/type_attribute"/>
+        <value
+            body="TypeAttribute::Derived"/>
+      </initializers>
+    </domainInitializer>
+    <labelMappings
+        readOnly="true">
+      <diagramLabel
+          href="EntityRelationship.gmfgraph#Connection_Title"/>
+    </labelMappings>
+    <containmentFeature
+        href="EntityRelationship.ecore#//Entity_Relationship_Model/ERM_Has_CEA"/>
+    <tool
+        xsi:type="gmftool:CreationTool"
+        href="EntityRelationship.gmftool#//@palette/@tools.3/@tools.8"/>
+    <diagramLink
+        href="EntityRelationship.gmfgraph#Connection_With_DerivedAttribute"/>
+    <sourceMetaFeature
+        xsi:type="ecore:EReference"
+        href="EntityRelationship.ecore#//Connection_With_Attribute/element"/>
+    <linkMetaFeature
+        xsi:type="ecore:EReference"
+        href="EntityRelationship.ecore#//Connection_With_Attribute/connection_attribute"/>
+    <creationConstraints>
+      <targetEnd
+          body="if (self.connected->size() &lt; 1) then (oclIsKindOf(Attribute)) else (not oclIsKindOf(Attribute)) endif and if (oppositeEnd.oclIsKindOf(Relationship) or oppositeEnd.oclIsKindOf(Generalization)) then (self.identifier &lt;> TypeIdentifier::PrimaryIdentifier and self.identifier &lt;> TypeIdentifier::AlternativeIdentifier) else (self.identifier = TypeIdentifier::PrimaryIdentifier or self.identifier = TypeIdentifier::AlternativeIdentifier or self.identifier = TypeIdentifier::NoIdentifier) endif and if(self.identifier = TypeIdentifier::PrimaryIdentifier or self.identifier = TypeIdentifier::AlternativeIdentifier) then (not oclIsKindOf(Attribute)) else (oclIsKindOf(Attribute)) endif"/>
+    </creationConstraints>
+  </links>
+  <links>
+    <domainMetaElement
+        href="EntityRelationship.ecore#//Connection_With_Attribute"/>
+    <domainSpecialization
+        body="self.type_attribute = TypeAttribute::Multivalued"/>
+    <domainInitializer
+        xsi:type="gmfmap:FeatureSeqInitializer">
+      <initializers
+          xsi:type="gmfmap:FeatureValueSpec">
+        <feature
+            xsi:type="ecore:EAttribute"
+            href="EntityRelationship.ecore#//Connection_With_Attribute/type_attribute"/>
+        <value
+            body="TypeAttribute::Multivalued"/>
+      </initializers>
+    </domainInitializer>
+    <containmentFeature
+        href="EntityRelationship.ecore#//Entity_Relationship_Model/ERM_Has_CEA"/>
+    <tool
+        xsi:type="gmftool:CreationTool"
+        href="EntityRelationship.gmftool#//@palette/@tools.3/@tools.9"/>
+    <diagramLink
+        href="EntityRelationship.gmfgraph#Connection_With_MultivaluedAttribute"/>
+    <sourceMetaFeature
+        xsi:type="ecore:EReference"
+        href="EntityRelationship.ecore#//Connection_With_Attribute/element"/>
+    <linkMetaFeature
+        xsi:type="ecore:EReference"
+        href="EntityRelationship.ecore#//Connection_With_Attribute/connection_attribute"/>
+    <creationConstraints>
+      <targetEnd
+          body="if (self.connected->size() &lt; 1) then (oclIsKindOf(Attribute)) else (not oclIsKindOf(Attribute)) endif and if (oppositeEnd.oclIsKindOf(Relationship) or oppositeEnd.oclIsKindOf(Generalization)) then (self.identifier &lt;> TypeIdentifier::PrimaryIdentifier and self.identifier &lt;> TypeIdentifier::AlternativeIdentifier) else (self.identifier = TypeIdentifier::PrimaryIdentifier or self.identifier = TypeIdentifier::AlternativeIdentifier or self.identifier = TypeIdentifier::NoIdentifier) endif and if(self.identifier = TypeIdentifier::PrimaryIdentifier or self.identifier = TypeIdentifier::AlternativeIdentifier) then (not oclIsKindOf(Attribute)) else (oclIsKindOf(Attribute)) endif"/>
+    </creationConstraints>
+  </links>
+  <links>
+    <domainMetaElement
+        href="EntityRelationship.ecore#//Relationships_Restriction"/>
+    <domainSpecialization
+        body="self.type_restriction = TypeRestriction::Inclusion"/>
+    <domainInitializer
+        xsi:type="gmfmap:FeatureSeqInitializer">
+      <initializers
+          xsi:type="gmfmap:FeatureValueSpec">
+        <feature
+            xsi:type="ecore:EAttribute"
+            href="EntityRelationship.ecore#//Relationships_Restriction/type_restriction"/>
+        <value
+            body="TypeRestriction::Inclusion"/>
+      </initializers>
+    </domainInitializer>
+    <labelMappings
+        readOnly="true">
+      <diagramLabel
+          href="EntityRelationship.gmfgraph#Connection_Title_Inclusion"/>
+    </labelMappings>
+    <containmentFeature
+        href="EntityRelationship.ecore#//Entity_Relationship_Model/ERM_Has_Rt"/>
+    <tool
+        xsi:type="gmftool:CreationTool"
+        href="EntityRelationship.gmftool#//@palette/@tools.4/@tools.1"/>
+    <diagramLink
+        href="EntityRelationship.gmfgraph#Connection_Inclusion_RestrictionAttribute"/>
+    <sourceMetaFeature
+        xsi:type="ecore:EReference"
+        href="EntityRelationship.ecore#//Relationships_Restriction/source_relationship"/>
+    <linkMetaFeature
+        xsi:type="ecore:EReference"
+        href="EntityRelationship.ecore#//Relationships_Restriction/target_relationship"/>
+    <creationConstraints>
+      <sourceEnd
+          body="self &lt;> oppositeEnd"/>
+      <targetEnd
+          body="if&#xD;&#xA;&#x9;(&#xD;&#xA;&#x9;&#x9;Relationships_Restriction.allInstances()->exists(c | &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;(&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;c.source_relationship = oppositeEnd &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;and &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;c.target_relationship = self&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;) &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;or &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;(&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;c.source_relationship = self &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;and &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;c.target_relationship = oppositeEnd&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;)&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;)&#xD;&#xA;&#x9;)&#xD;&#xA;&#x9;then&#xD;&#xA;&#x9;(&#xD;&#xA;&#x9;&#x9;not oclIsKindOf(Relationship)&#xD;&#xA;&#x9;)&#xD;&#xA;&#x9;else&#xD;&#xA;&#x9;(&#xD;&#xA;&#x9;&#x9;oclIsKindOf(Relationship)&#xD;&#xA;&#x9;)&#xD;&#xA;endif"/>
+    </creationConstraints>
+  </links>
+  <links>
+    <domainMetaElement
+        href="EntityRelationship.ecore#//Relationships_Restriction"/>
+    <domainSpecialization
+        body="self.type_restriction = TypeRestriction::Exclusion"/>
+    <domainInitializer
+        xsi:type="gmfmap:FeatureSeqInitializer">
+      <initializers
+          xsi:type="gmfmap:FeatureValueSpec">
+        <feature
+            xsi:type="ecore:EAttribute"
+            href="EntityRelationship.ecore#//Relationships_Restriction/type_restriction"/>
+        <value
+            body="TypeRestriction::Exclusion"/>
+      </initializers>
+    </domainInitializer>
+    <labelMappings
+        readOnly="true">
+      <diagramLabel
+          href="EntityRelationship.gmfgraph#Connection_Title_Exclusion"/>
+    </labelMappings>
+    <containmentFeature
+        href="EntityRelationship.ecore#//Entity_Relationship_Model/ERM_Has_Rt"/>
+    <tool
+        xsi:type="gmftool:CreationTool"
+        href="EntityRelationship.gmftool#//@palette/@tools.4/@tools.0"/>
+    <diagramLink
+        href="EntityRelationship.gmfgraph#Connection_Exclusion_RestrictionAttribute"/>
+    <sourceMetaFeature
+        xsi:type="ecore:EReference"
+        href="EntityRelationship.ecore#//Relationships_Restriction/source_relationship"/>
+    <linkMetaFeature
+        xsi:type="ecore:EReference"
+        href="EntityRelationship.ecore#//Relationships_Restriction/target_relationship"/>
+    <creationConstraints>
+      <sourceEnd
+          body="self &lt;> oppositeEnd"/>
+      <targetEnd
+          body="if&#xD;&#xA;&#x9;(&#xD;&#xA;&#x9;&#x9;Relationships_Restriction.allInstances()->exists(c | &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;(&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;c.source_relationship = oppositeEnd &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;and &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;c.target_relationship = self&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;) &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;or &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;(&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;c.source_relationship = self &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;and &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;c.target_relationship = oppositeEnd&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;)&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;)&#xD;&#xA;&#x9;)&#xD;&#xA;&#x9;then&#xD;&#xA;&#x9;(&#xD;&#xA;&#x9;&#x9;not oclIsKindOf(Relationship)&#xD;&#xA;&#x9;)&#xD;&#xA;&#x9;else&#xD;&#xA;&#x9;(&#xD;&#xA;&#x9;&#x9;oclIsKindOf(Relationship)&#xD;&#xA;&#x9;)&#xD;&#xA;endif"/>
+    </creationConstraints>
+  </links>
+  <links>
+    <tool
+        xsi:type="gmftool:CreationTool"
+        href="EntityRelationship.gmftool#//@palette/@tools.3/@tools.12"/>
+    <diagramLink
+        href="EntityRelationship.gmfgraph#AttributeAttributes_composites"/>
+    <linkMetaFeature
+        xsi:type="ecore:EReference"
+        href="EntityRelationship.ecore#//Attribute/attributes_composites"/>
+    <creationConstraints>
+      <sourceEnd
+          body="if(self.connected.type_attribute = TypeAttribute::Composite)then(oclIsKindOf(Attribute))else(not oclIsKindOf(Attribute))endif"/>
+      <targetEnd
+          body="if(self.attributes->size() = 0)then(oclIsKindOf(Attribute_Composite))else(not oclIsKindOf(Attribute_Composite))endif"/>
+    </creationConstraints>
+  </links>
+  <links>
+    <domainMetaElement
+        href="EntityRelationship.ecore#//Connection_E_R_Restriction"/>
+    <domainSpecialization
+        body="self.type_restriction = TypeRestriction2::Inclusiveness"/>
+    <domainInitializer
+        xsi:type="gmfmap:FeatureSeqInitializer">
+      <initializers
+          xsi:type="gmfmap:FeatureValueSpec">
+        <feature
+            xsi:type="ecore:EAttribute"
+            href="EntityRelationship.ecore#//Connection_E_R_Restriction/type_restriction"/>
+        <value
+            body="TypeRestriction2::Inclusiveness"/>
+      </initializers>
+    </domainInitializer>
+    <containmentFeature
+        href="EntityRelationship.ecore#//Entity_Relationship_Model/ERM_Has_Rt2"/>
+    <tool
+        xsi:type="gmftool:CreationTool"
+        href="EntityRelationship.gmftool#//@palette/@tools.5/@tools.1"/>
+    <diagramLink
+        href="EntityRelationship.gmfgraph#Connection_Inclusiveness_RestrictionConnection"/>
+    <sourceMetaFeature
+        xsi:type="ecore:EReference"
+        href="EntityRelationship.ecore#//Connection_E_R_Restriction/connection_source_entity_relationship"/>
+    <linkMetaFeature
+        xsi:type="ecore:EReference"
+        href="EntityRelationship.ecore#//Connection_E_R_Restriction/connection_target_entity_relationship"/>
+    <creationConstraints>
+      <sourceEnd
+          body="self &lt;> oppositeEnd"/>
+      <targetEnd
+          body="if &#xD;&#xA;(&#xD;&#xA;&#x9;(&#xD;&#xA;&#x9;&#x9;(&#xD;&#xA;&#x9;&#x9;&#x9;self.oclIsKindOf(Connection_Entity2Relationship)&#xD;&#xA;&#x9;&#x9;&#x9;and&#xD;&#xA;&#x9;&#x9;&#x9;oppositeEnd.oclIsKindOf(Connection_Entity2Relationship)&#xD;&#xA;&#x9;&#x9;)&#xD;&#xA;&#x9;&#x9;and&#xD;&#xA;&#x9;&#x9;(&#xD;&#xA;&#x9;&#x9;&#x9;self.oclAsType(Connection_Entity2Relationship).source_entity&#xD;&#xA;&#x9;&#x9;&#x9;=&#xD;&#xA;&#x9;&#x9;&#x9;oppositeEnd.oclAsType(Connection_Entity2Relationship).source_entity&#xD;&#xA;&#x9;&#x9;)&#xD;&#xA;&#x9;)&#xD;&#xA;&#x9;or&#xD;&#xA;&#x9;(&#xD;&#xA;&#x9;&#x9;(&#xD;&#xA;&#x9;&#x9;&#x9;self.oclIsKindOf(Connection_Entity2Relationship)&#xD;&#xA;&#x9;&#x9;&#x9;and&#xD;&#xA;&#x9;&#x9;&#x9;oppositeEnd.oclIsKindOf(Connection_Relationship2Entity)&#xD;&#xA;&#x9;&#x9;)&#xD;&#xA;&#x9;&#x9;and&#xD;&#xA;&#x9;&#x9;(&#xD;&#xA;&#x9;&#x9;&#x9;self.oclAsType(Connection_Entity2Relationship).source_entity&#xD;&#xA;&#x9;&#x9;&#x9;=&#xD;&#xA;&#x9;&#x9;&#x9;oppositeEnd.oclAsType(Connection_Relationship2Entity).target_entity&#xD;&#xA;&#x9;&#x9;)&#xD;&#xA;&#x9;)&#xD;&#xA;&#x9;or&#x9;&#xD;&#xA;&#x9;(&#xD;&#xA;&#x9;&#x9;(&#xD;&#xA;&#x9;&#x9;&#x9;self.oclIsKindOf(Connection_Relationship2Entity)&#xD;&#xA;&#x9;&#x9;&#x9;and&#xD;&#xA;&#x9;&#x9;&#x9;oppositeEnd.oclIsKindOf(Connection_Entity2Relationship)&#xD;&#xA;&#x9;&#x9;)&#xD;&#xA;&#x9;&#x9;and&#xD;&#xA;&#x9;&#x9;(&#xD;&#xA;&#x9;&#x9;&#x9;self.oclAsType(Connection_Relationship2Entity).target_entity&#xD;&#xA;&#x9;&#x9;&#x9;=&#xD;&#xA;&#x9;&#x9;&#x9;oppositeEnd.oclAsType(Connection_Entity2Relationship).source_entity&#xD;&#xA;&#x9;&#x9;)&#xD;&#xA;&#x9;)&#xD;&#xA;&#x9;or&#xD;&#xA;&#x9;(&#xD;&#xA;&#x9;&#x9;(&#xD;&#xA;&#x9;&#x9;&#x9;self.oclIsKindOf(Connection_Relationship2Entity)&#xD;&#xA;&#x9;&#x9;&#x9;and&#xD;&#xA;&#x9;&#x9;&#x9;oppositeEnd.oclIsKindOf(Connection_Relationship2Entity)&#xD;&#xA;&#x9;&#x9;)&#xD;&#xA;&#x9;&#x9;and&#xD;&#xA;&#x9;&#x9;(&#xD;&#xA;&#x9;&#x9;&#x9;self.oclAsType(Connection_Relationship2Entity).target_entity&#xD;&#xA;&#x9;&#x9;&#x9;=&#xD;&#xA;&#x9;&#x9;&#x9;oppositeEnd.oclAsType(Connection_Relationship2Entity).target_entity&#xD;&#xA;&#x9;&#x9;)&#xD;&#xA;&#x9;)&#xD;&#xA;)&#xD;&#xA;then&#xD;&#xA;&#x9;(&#xD;&#xA;&#x9;&#x9;oclIsKindOf(Connection_EntityRelationship)&#xD;&#xA;&#x9;)&#xD;&#xA;else&#xD;&#xA;&#x9;(&#xD;&#xA;&#x9;&#x9;not oclIsKindOf(Connection_EntityRelationship)&#xD;&#xA;&#x9;)&#xD;&#xA;endif&#xD;&#xA;and&#xD;&#xA;if&#xD;&#xA;(&#xD;&#xA;&#x9;Connection_E_R_Restriction.allInstances()&#xD;&#xA;&#x9;->select&#xD;&#xA;&#x9;&#x9;&#x9;(&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;c:Connection_E_R_Restriction&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;|&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;(&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;c.connection_source_entity_relationship = self &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;and &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;c.connection_target_entity_relationship = oppositeEnd&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;) &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;or &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;(&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;c.connection_source_entity_relationship = oppositeEnd &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;and &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;c.connection_target_entity_relationship = self&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;)&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;)->size() > 0&#xD;&#xA;)&#xD;&#xA;then&#xD;&#xA;&#x9;( &#xD;&#xA;&#x9;&#x9;not oclIsKindOf(Connection_EntityRelationship)&#xD;&#xA;&#x9;) &#xD;&#xA;else &#xD;&#xA;&#x9;(&#xD;&#xA;&#x9;&#x9;oclIsKindOf(Connection_EntityRelationship)&#xD;&#xA;&#x9;) &#xD;&#xA;endif"/>
+    </creationConstraints>
+  </links>
+  <links>
+    <domainMetaElement
+        href="EntityRelationship.ecore#//Connection_E_R_Restriction"/>
+    <domainSpecialization
+        body="self.type_restriction = TypeRestriction2::Exclusiveness"/>
+    <domainInitializer
+        xsi:type="gmfmap:FeatureSeqInitializer">
+      <initializers
+          xsi:type="gmfmap:FeatureValueSpec">
+        <feature
+            xsi:type="ecore:EAttribute"
+            href="EntityRelationship.ecore#//Connection_E_R_Restriction/type_restriction"/>
+        <value
+            body="TypeRestriction2::Exclusiveness"/>
+      </initializers>
+    </domainInitializer>
+    <containmentFeature
+        href="EntityRelationship.ecore#//Entity_Relationship_Model/ERM_Has_Rt2"/>
+    <tool
+        xsi:type="gmftool:CreationTool"
+        href="EntityRelationship.gmftool#//@palette/@tools.5/@tools.0"/>
+    <diagramLink
+        href="EntityRelationship.gmfgraph#Connection_Exclusiveness_RestrictionConnection"/>
+    <sourceMetaFeature
+        xsi:type="ecore:EReference"
+        href="EntityRelationship.ecore#//Connection_E_R_Restriction/connection_source_entity_relationship"/>
+    <linkMetaFeature
+        xsi:type="ecore:EReference"
+        href="EntityRelationship.ecore#//Connection_E_R_Restriction/connection_target_entity_relationship"/>
+    <creationConstraints>
+      <sourceEnd
+          body="self &lt;> oppositeEnd"/>
+      <targetEnd
+          body="if &#xD;&#xA;(&#xD;&#xA;&#x9;(&#xD;&#xA;&#x9;&#x9;(&#xD;&#xA;&#x9;&#x9;&#x9;self.oclIsKindOf(Connection_Entity2Relationship)&#xD;&#xA;&#x9;&#x9;&#x9;and&#xD;&#xA;&#x9;&#x9;&#x9;oppositeEnd.oclIsKindOf(Connection_Entity2Relationship)&#xD;&#xA;&#x9;&#x9;)&#xD;&#xA;&#x9;&#x9;and&#xD;&#xA;&#x9;&#x9;(&#xD;&#xA;&#x9;&#x9;&#x9;self.oclAsType(Connection_Entity2Relationship).source_entity&#xD;&#xA;&#x9;&#x9;&#x9;=&#xD;&#xA;&#x9;&#x9;&#x9;oppositeEnd.oclAsType(Connection_Entity2Relationship).source_entity&#xD;&#xA;&#x9;&#x9;)&#xD;&#xA;&#x9;)&#xD;&#xA;&#x9;or&#xD;&#xA;&#x9;(&#xD;&#xA;&#x9;&#x9;(&#xD;&#xA;&#x9;&#x9;&#x9;self.oclIsKindOf(Connection_Entity2Relationship)&#xD;&#xA;&#x9;&#x9;&#x9;and&#xD;&#xA;&#x9;&#x9;&#x9;oppositeEnd.oclIsKindOf(Connection_Relationship2Entity)&#xD;&#xA;&#x9;&#x9;)&#xD;&#xA;&#x9;&#x9;and&#xD;&#xA;&#x9;&#x9;(&#xD;&#xA;&#x9;&#x9;&#x9;self.oclAsType(Connection_Entity2Relationship).source_entity&#xD;&#xA;&#x9;&#x9;&#x9;=&#xD;&#xA;&#x9;&#x9;&#x9;oppositeEnd.oclAsType(Connection_Relationship2Entity).target_entity&#xD;&#xA;&#x9;&#x9;)&#xD;&#xA;&#x9;)&#xD;&#xA;&#x9;or&#x9;&#xD;&#xA;&#x9;(&#xD;&#xA;&#x9;&#x9;(&#xD;&#xA;&#x9;&#x9;&#x9;self.oclIsKindOf(Connection_Relationship2Entity)&#xD;&#xA;&#x9;&#x9;&#x9;and&#xD;&#xA;&#x9;&#x9;&#x9;oppositeEnd.oclIsKindOf(Connection_Entity2Relationship)&#xD;&#xA;&#x9;&#x9;)&#xD;&#xA;&#x9;&#x9;and&#xD;&#xA;&#x9;&#x9;(&#xD;&#xA;&#x9;&#x9;&#x9;self.oclAsType(Connection_Relationship2Entity).target_entity&#xD;&#xA;&#x9;&#x9;&#x9;=&#xD;&#xA;&#x9;&#x9;&#x9;oppositeEnd.oclAsType(Connection_Entity2Relationship).source_entity&#xD;&#xA;&#x9;&#x9;)&#xD;&#xA;&#x9;)&#xD;&#xA;&#x9;or&#xD;&#xA;&#x9;(&#xD;&#xA;&#x9;&#x9;(&#xD;&#xA;&#x9;&#x9;&#x9;self.oclIsKindOf(Connection_Relationship2Entity)&#xD;&#xA;&#x9;&#x9;&#x9;and&#xD;&#xA;&#x9;&#x9;&#x9;oppositeEnd.oclIsKindOf(Connection_Relationship2Entity)&#xD;&#xA;&#x9;&#x9;)&#xD;&#xA;&#x9;&#x9;and&#xD;&#xA;&#x9;&#x9;(&#xD;&#xA;&#x9;&#x9;&#x9;self.oclAsType(Connection_Relationship2Entity).target_entity&#xD;&#xA;&#x9;&#x9;&#x9;=&#xD;&#xA;&#x9;&#x9;&#x9;oppositeEnd.oclAsType(Connection_Relationship2Entity).target_entity&#xD;&#xA;&#x9;&#x9;)&#xD;&#xA;&#x9;)&#xD;&#xA;)&#xD;&#xA;then&#xD;&#xA;&#x9;(&#xD;&#xA;&#x9;&#x9;oclIsKindOf(Connection_EntityRelationship)&#xD;&#xA;&#x9;)&#xD;&#xA;else&#xD;&#xA;&#x9;(&#xD;&#xA;&#x9;&#x9;not oclIsKindOf(Connection_EntityRelationship)&#xD;&#xA;&#x9;)&#xD;&#xA;endif&#xD;&#xA;and&#xD;&#xA;if&#xD;&#xA;(&#xD;&#xA;&#x9;Connection_E_R_Restriction.allInstances()&#xD;&#xA;&#x9;->select&#xD;&#xA;&#x9;&#x9;&#x9;(&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;c:Connection_E_R_Restriction&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;|&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;(&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;c.connection_source_entity_relationship = self &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;and &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;c.connection_target_entity_relationship = oppositeEnd&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;) &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;or &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;(&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;c.connection_source_entity_relationship = oppositeEnd &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;and &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;c.connection_target_entity_relationship = self&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;)&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;)->size() > 0&#xD;&#xA;)&#xD;&#xA;then&#xD;&#xA;&#x9;( &#xD;&#xA;&#x9;&#x9;not oclIsKindOf(Connection_EntityRelationship)&#xD;&#xA;&#x9;) &#xD;&#xA;else &#xD;&#xA;&#x9;(&#xD;&#xA;&#x9;&#x9;oclIsKindOf(Connection_EntityRelationship)&#xD;&#xA;&#x9;) &#xD;&#xA;endif"/>
+    </creationConstraints>
+  </links>
+  <links>
+    <tool
+        xsi:type="gmftool:CreationTool"
+        href="EntityRelationship.gmftool#//@palette/@tools.2/@tools.5"/>
+    <diagramLink
+        href="EntityRelationship.gmfgraph#Connection_GeneralizationConnection"/>
+    <linkMetaFeature
+        xsi:type="ecore:EReference"
+        href="EntityRelationship.ecore#//Generalization/superclass"/>
+  </links>
+  <links>
+    <domainMetaElement
+        href="EntityRelationship.ecore#//Connection_ConnectionEntityRelationship2Attribute"/>
+    <containmentFeature
+        href="EntityRelationship.ecore#//Entity_Relationship_Model/ERM_HasConnectionEntityRelationship2Attribute"/>
+    <tool
+        xsi:type="gmftool:CreationTool"
+        href="EntityRelationship.gmftool#//@palette/@tools.3/@tools.10"/>
+    <diagramLink
+        href="EntityRelationship.gmfgraph#Connection_With_DependenceInIdentificationAttribute"/>
+    <sourceMetaFeature
+        xsi:type="ecore:EReference"
+        href="EntityRelationship.ecore#//Connection_ConnectionEntityRelationship2Attribute/source_connection"/>
+    <linkMetaFeature
+        xsi:type="ecore:EReference"
+        href="EntityRelationship.ecore#//Connection_ConnectionEntityRelationship2Attribute/target_attribute"/>
+    <creationConstraints>
+      <sourceEnd
+          body="if&#xD;&#xA;(&#xD;&#xA;&#x9;self.oclIsTypeOf(Connection_Entity2Relationship) or&#xD;&#xA;&#x9;self.oclIsTypeOf(Connection_Relationship2Entity)&#xD;&#xA;)&#xD;&#xA;then&#xD;&#xA;&#x9;(&#xD;&#xA;&#x9;&#x9;oclIsKindOf(Connection_EntityRelationship)&#xD;&#xA;&#x9;)&#xD;&#xA;else&#xD;&#xA;&#x9;(&#xD;&#xA;&#x9;&#x9;not oclIsKindOf(Connection_EntityRelationship)&#xD;&#xA;&#x9;)&#xD;&#xA;endif"/>
+      <targetEnd
+          body="if &#x9;&#xD;&#xA;( &#xD;&#xA;&#x9;oppositeEnd.oclIsTypeOf(Connection_Entity2Relationship) and &#xD;&#xA;       oppositeEnd.oclAsType(Connection_Entity2Relationship).target_relationship.type_relationship = TypeRelationship::Weak_dependence_in_identification and&#xD;&#xA;&#x9;self.identifier = TypeIdentifier::PrimaryIdentifier&#xD;&#xA;) &#xD;&#xA;then &#xD;&#xA;&#x9;( &#xD;&#xA;&#x9;&#x9;oclIsKindOf(Attribute)&#xD;&#xA;&#x9;) &#xD;&#xA;&#x9;else &#xD;&#xA;&#x9;(&#xD;&#xA;&#x9;&#x9;not oclIsKindOf(Attribute) &#xD;&#xA;&#x9;) &#xD;&#xA;endif&#xD;&#xA;or&#xD;&#xA;if &#x9;&#xD;&#xA;( &#xD;&#xA;&#x9;oppositeEnd.oclIsTypeOf(Connection_Relationship2Entity) and &#xD;&#xA;       oppositeEnd.oclAsType(Connection_Relationship2Entity).source_relationship.type_relationship = TypeRelationship::Weak_dependence_in_identification and&#xD;&#xA;&#x9;self.identifier = TypeIdentifier::PrimaryIdentifier&#xD;&#xA;) &#xD;&#xA;then &#xD;&#xA;&#x9;( &#xD;&#xA;&#x9;&#x9;oclIsKindOf(Attribute)&#xD;&#xA;&#x9;) &#xD;&#xA;&#x9;else &#xD;&#xA;&#x9;(&#xD;&#xA;&#x9;&#x9;not oclIsKindOf(Attribute) &#xD;&#xA;&#x9;) &#xD;&#xA;endif"/>
+    </creationConstraints>
+  </links>
+  <diagram>
+    <diagramCanvas
+        href="EntityRelationship.gmfgraph#entityrelationship"/>
+    <domainModel
+        href="EntityRelationship.ecore#/"/>
+    <domainMetaElement
+        href="EntityRelationship.ecore#//Entity_Relationship_Model"/>
+    <palette
+        href="EntityRelationship.gmftool#//@palette"/>
+  </diagram>
+  <audits
+      id="entityrelationship.audit"
+      name="Audits for entityrelationship metamodel"
+      description="Validation constraints for the entityrelationship metamodel">
+    <audits
+        name="Attribute connections"
+        description="An attribute must have a connection to an element"
+        id="entityrelationship.attribute.in"
+        message="An attribute must have a connection to an element (Entity, Relationship or Generalization)">
+      <rule
+          body="self.connected->size() &lt;> 0 or self.attributes_composites.attributes->size() &lt;> 0"/>
+      <target
+          xsi:type="gmfmap:DomainElementTarget">
+        <element
+            href="EntityRelationship.ecore#//Attribute"/>
+      </target>
+    </audits>
+    <audits
+        name="Entity connections"
+        description="An entity must have a connection to a relationship or to be a subclass"
+        id="entityrelationship.entity.in"
+        message="An entity must have a connection to a relationship or to be a subclass">
+      <rule
+          body="(self.entity_connected_to_entity2relationship->size() &lt;> 0) or self.subclass_generalizations->size() &lt;> 0"/>
+      <target
+          xsi:type="gmfmap:DomainElementTarget">
+        <element
+            href="EntityRelationship.ecore#//Entity"/>
+      </target>
+    </audits>
+    <audits
+        name="Composite attribute connections"
+        description="A composite attribute must have a connection to an attribute"
+        id="entityrelationship.compositeattribute.in"
+        message="A composite attribute must have a connection to an attribute">
+      <rule
+          body="self.attributes->notEmpty()"/>
+      <target
+          xsi:type="gmfmap:DomainElementTarget">
+        <element
+            href="EntityRelationship.ecore#//Attribute_Composite"/>
+      </target>
+    </audits>
+    <audits
+        name="Any entity must have an primary identifier"
+        description="An entity must have a connection to an primary identifier "
+        id="entityrelationship.entity.notprimaryidentifier"
+        message="An entity must have a connection to an primary identifier">
+      <rule
+          body="self.connected_with_attribute.connection_attribute.oclAsType(Attribute)->exists (a | a.identifier = TypeIdentifier::PrimaryIdentifier)"/>
+      <target
+          xsi:type="gmfmap:DomainElementTarget">
+        <element
+            href="EntityRelationship.ecore#//Entity"/>
+      </target>
+    </audits>
+    <audits
+        name="Any entity must not have more than one primary identifier"
+        description="An entity must not have more than one primary identifier"
+        id="entityrelationship.entity.primaryidentifier"
+        message="An entity must not have more than one primary identifier">
+      <rule
+          body="self.connected_with_attribute.connection_attribute.oclAsType(Attribute)->select (a | a.identifier = TypeIdentifier::PrimaryIdentifier) ->size() &lt; 2"/>
+      <target
+          xsi:type="gmfmap:DomainElementTarget">
+        <element
+            href="EntityRelationship.ecore#//Entity"/>
+      </target>
+    </audits>
+    <audits
+        name="No entity must have empty name"
+        description="An entity must not have empty name"
+        id="entityrelationship.entity.emptyname"
+        message="An entity must not have empty name">
+      <rule
+          body="self ->forAll(e | not e.name_entity.oclIsUndefined() and e.name_entity &lt;> '')"/>
+      <target
+          xsi:type="gmfmap:DomainElementTarget">
+        <element
+            href="EntityRelationship.ecore#//Entity"/>
+      </target>
+    </audits>
+    <audits
+        name="No attribute must have empty name"
+        description="An attribute must not have empty name"
+        id="entityrelationship.attribute.emptyname"
+        message="An attribute must not have empty name">
+      <rule
+          body="self ->forAll(e | not e.name_attribute.oclIsUndefined() and e.name_attribute &lt;> '')"/>
+      <target
+          xsi:type="gmfmap:DomainElementTarget">
+        <element
+            href="EntityRelationship.ecore#//Attribute"/>
+      </target>
+    </audits>
+    <audits
+        name="No relationship must have empty name"
+        description="A relationship must not have empty name"
+        id="entityrelationship.relationship.emptyname"
+        message="A relationship must not have empty name">
+      <rule
+          body="self ->forAll(e | not e.name_relationship.oclIsUndefined() and e.name_relationship &lt;> '')"/>
+      <target
+          xsi:type="gmfmap:DomainElementTarget">
+        <element
+            href="EntityRelationship.ecore#//Relationship"/>
+      </target>
+    </audits>
+    <audits
+        name="No entity-relationship connection must have empty role"
+        description="An entity-relationship connection must not have empty role"
+        id="entityrelationship.entity-relationshipconnection.emptyrole"
+        message="An entity-relationship connection must not have empty role">
+      <rule
+          body="self ->forAll(e | not e.role.oclIsUndefined() and e.role &lt;> '')"/>
+      <target
+          xsi:type="gmfmap:DomainElementTarget">
+        <element
+            href="EntityRelationship.ecore#//Connection_EntityRelationship"/>
+      </target>
+    </audits>
+    <audits
+        name="No composite attribute must have empty name"
+        description="A compsoite attribute must not have empty name"
+        id="entityrelationship.compositeattribute.emptyname"
+        message="A composite attribute must not have empty name">
+      <rule
+          body="self ->forAll(e | not e.name_at_composite.oclIsUndefined() and e.name_at_composite &lt;> '')"/>
+      <target
+          xsi:type="gmfmap:DomainElementTarget">
+        <element
+            href="EntityRelationship.ecore#//Attribute_Composite"/>
+      </target>
+    </audits>
+    <audits
+        name="Any weak relationship dependence in identification must have a connection to an dependence in identification attribute"
+        description="A weak relationship dependence in identification must have a connection to an dependence in identification attribute"
+        id="entityrelationship.weakrelationship.notconnectiondependenceinidentification"
+        message="A weak relationship dependence in identification must have a connection to an dependence in identification attribute">
+      <rule
+          body="if(self.type_relationship =TypeRelationship::Weak_dependence_in_identification)then(self.connected_with_attribute.oclAsType(Connection_With_Attribute)->exists (c | c.type_attribute = TypeAttribute::Dependence_in_identification))else(self.connected_with_attribute.oclAsType(Connection_With_Attribute)->size() = 0 or self.connected_with_attribute.oclAsType(Connection_With_Attribute)->size() &lt;> 0)endif"/>
+      <target
+          xsi:type="gmfmap:DomainElementTarget">
+        <element
+            href="EntityRelationship.ecore#//Relationship"/>
+      </target>
+    </audits>
+    <audits
+        name="Any weak relationship dependence in identification must have a connection to an dependence attribute"
+        description="A weak relationship dependence in identification must have a connection to an dependence attribute"
+        id="entityrelationship.weakrelationship.dependenceinidentification"
+        message="A weak relationship dependence in identification must have a connection to an dependence attribute">
+      <rule
+          body="if(self.connected.oclAsType(Connection_With_Attribute)->exists (c | c.type_attribute = TypeAttribute::Dependence_in_identification))then(self.attributes_identification->size() &lt;> 0)else(self.attributes_identification->size() = 0)endif"/>
+      <target
+          xsi:type="gmfmap:DomainElementTarget">
+        <element
+            href="EntityRelationship.ecore#//Attribute"/>
+      </target>
+    </audits>
+    <audits
+        name="Equals entities"
+        description="Must not be two equal entities"
+        id="entityrelationship.entity.equal entities"
+        message="There are entities with the same name">
+      <rule
+          body="Entity.allInstances()->forAll(p1, p2:Entity | p1 &lt;> p2 implies p1.name_entity.toUpper() &lt;> p2.name_entity.toUpper())"/>
+      <target
+          xsi:type="gmfmap:DomainElementTarget">
+        <element
+            href="EntityRelationship.ecore#//Entity"/>
+      </target>
+    </audits>
+    <audits
+        name="Equals relationships"
+        description="Must not be two equal relationships"
+        id="entityrelationship.relationship.equal relationships"
+        message="There are relationships with the same name">
+      <rule
+          body="Relationship.allInstances()->forAll(p1, p2:Relationship | p1 &lt;> p2 implies p1.name_relationship.toUpper() &lt;> p2.name_relationship.toUpper())"/>
+      <target
+          xsi:type="gmfmap:DomainElementTarget">
+        <element
+            href="EntityRelationship.ecore#//Relationship"/>
+      </target>
+    </audits>
+    <audits
+        name="Equals connections_entity_relationship"
+        description="Must not be two equal connections entity-relationship"
+        id="entityrelationship.relationship.equal connections entity-relationship"
+        message="There are connections entity-relationship with the same role">
+      <rule
+          body="Connection_EntityRelationship.allInstances()->forAll(p1, p2:Connection_EntityRelationship | p1 &lt;> p2 implies p1.role.toUpper() &lt;> p2.role.toUpper())"/>
+      <target
+          xsi:type="gmfmap:DomainElementTarget">
+        <element
+            href="EntityRelationship.ecore#//Connection_EntityRelationship"/>
+      </target>
+    </audits>
+    <audits
+        name="Equals attributes"
+        description="Must not be two equal attributes in the same element"
+        id="entityrelationship.attribute.equal attributes"
+        message="There are attributes with the same name in the same element">
+      <rule
+          body="Attribute.allInstances()->forAll(p1, p2:Attribute | p1 &lt;> p2 and p1.connected.element = p2.connected.element implies p1.name_attribute.toUpper() &lt;> p2.name_attribute.toUpper())"/>
+      <target
+          xsi:type="gmfmap:DomainElementTarget">
+        <element
+            href="EntityRelationship.ecore#//Attribute"/>
+      </target>
+    </audits>
+    <audits
+        name="Equals composite attributes "
+        description="Must not be two equal composite attributes in the same attribute"
+        id="entityrelationship.compositeattribute.equal attributes"
+        message="There are composite attributes with the same name in the same base attribute">
+      <rule
+          body="Attribute_Composite.allInstances()->forAll(p1, p2:Attribute_Composite | p1 &lt;> p2 and p1.attributes = p2.attributes implies p1.name_at_composite.toUpper() &lt;> p2.name_at_composite.toUpper())"/>
+      <target
+          xsi:type="gmfmap:DomainElementTarget">
+        <element
+            href="EntityRelationship.ecore#//Attribute_Composite"/>
+      </target>
+    </audits>
+  </audits>
+</gmfmap:Mapping>

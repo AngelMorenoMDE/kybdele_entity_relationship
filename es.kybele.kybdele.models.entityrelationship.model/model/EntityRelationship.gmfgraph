@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gmfgraph:Canvas xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmfgraph="http://www.eclipse.org/gmf/2006/GraphicalDefinition" name="entityrelationship">
+  <figures name="Default">
+    <descriptors name="EntityFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="EntityFigure">
+        <layout xsi:type="gmfgraph:StackLayout"/>
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="12" left="10" bottom="10" right="10"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="EntityName_entityFigure" text="REGULAR ENTITY"/>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.0/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="WeakEntityFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="WeakEntityFigure">
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="7" left="7" bottom="7" right="7"/>
+        </border>
+        <children xsi:type="gmfgraph:Rectangle">
+          <layout xsi:type="gmfgraph:StackLayout"/>
+          <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+          <border xsi:type="gmfgraph:MarginBorder">
+            <insets top="10" left="10" bottom="10" right="10"/>
+          </border>
+          <children xsi:type="gmfgraph:Label" name="WeakEntityName_entityFigure" text="WEAK ENTITY"/>
+        </children>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.1/@actualFigure/@children.0/@children.0"/>
+    </descriptors>
+    <descriptors name="RelationshipFigure">
+      <actualFigure xsi:type="gmfgraph:ScalablePolygon" name="RelationshipFigure">
+        <layout xsi:type="gmfgraph:StackLayout"/>
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+        <minimumSize dx="109" dy="76"/>
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="13" left="11" bottom="11" right="11"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="RelationshipName_relationshipFigure" text="Relationship"/>
+        <template x="100"/>
+        <template x="200" y="100"/>
+        <template x="100" y="200"/>
+        <template y="100"/>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.2/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="WeakExistenceRelationshipFigure">
+      <actualFigure xsi:type="gmfgraph:ScalablePolygon" name="WeakExistenceRelationshipFigure">
+        <layout xsi:type="gmfgraph:StackLayout"/>
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+        <minimumSize dx="109" dy="76"/>
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="3"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="WeakExistenceRelationshipName_relationshipFigure" text="WERelationship"/>
+        <children xsi:type="gmfgraph:Label" name="Title" text="E"/>
+        <template x="100"/>
+        <template x="150" y="50"/>
+        <template x="50" y="50"/>
+        <template y="100"/>
+        <template x="100" y="200"/>
+        <template x="200" y="100"/>
+        <template x="150" y="50"/>
+        <template x="50" y="50"/>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.3/@actualFigure/@children.0"/>
+      <accessors figure="//@figures.0/@descriptors.3/@actualFigure/@children.1"/>
+    </descriptors>
+    <descriptors name="WeakIdentificationRelationshipFigure">
+      <actualFigure xsi:type="gmfgraph:ScalablePolygon" name="WeakIdentificationRelationshipFigure">
+        <layout xsi:type="gmfgraph:StackLayout"/>
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+        <minimumSize dx="109" dy="76"/>
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="3"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="WeakIdentificationeRelationshipName_relationshipFigure" text="WIdRelationship"/>
+        <children xsi:type="gmfgraph:Label" name="Title2" text="Id"/>
+        <template x="100"/>
+        <template x="150" y="50"/>
+        <template x="50" y="50"/>
+        <template y="100"/>
+        <template x="100" y="200"/>
+        <template x="200" y="100"/>
+        <template x="150" y="50"/>
+        <template x="50" y="50"/>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.4/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="CardinalityRelationshipFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="CardinalityRelationshipFigure" text=":"/>
+      <accessors figure="//@figures.0/@descriptors.5/@actualFigure"/>
+    </descriptors>
+    <descriptors name="Connection_Entity2RelationshipFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Connection_Entity2RelationshipFigure">
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+        <children xsi:type="gmfgraph:Label" name="Connection_Entity2RelationshipRoleFigure" text=""/>
+        <children xsi:type="gmfgraph:Label" name="Connection_Entity2RelationshipCardinalityFigure" text=""/>
+      </actualFigure>
+      <accessors accessor="getFigureConnection_Entity2RelationshipRoleFigure" figure="//@figures.0/@descriptors.6/@actualFigure/@children.0"/>
+      <accessors accessor="getFigureConnection_Entity2RelationshipCardinalityFigure" figure="//@figures.0/@descriptors.6/@actualFigure/@children.1"/>
+    </descriptors>
+    <descriptors name="Connection_Relationship2EntityFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Connection_Relationship2EntityFigure">
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+        <children xsi:type="gmfgraph:Label" name="Connection_Relationship2EntityRoleFigure" text=""/>
+        <children xsi:type="gmfgraph:Label" name="Connection_Relationship2EntityCardinalityFigure" text=""/>
+      </actualFigure>
+      <accessors accessor="getFigureConnection_Relationship2EntityRoleFigure" figure="//@figures.0/@descriptors.7/@actualFigure/@children.0"/>
+      <accessors accessor="getFigureConnection_Relationship2EntityCardinalityFigure" figure="//@figures.0/@descriptors.7/@actualFigure/@children.1"/>
+    </descriptors>
+    <descriptors name="Connection_Generalization_EntityFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Connection_Generalization_EntityFigure">
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+        <children xsi:type="gmfgraph:Label" name="Connection_Generalization_EntityCardinalityFigure" text=""/>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.8/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="AttributeFigure">
+      <actualFigure xsi:type="gmfgraph:Ellipse" name="AttributeFigure" lineWidth="2">
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+        <backgroundColor xsi:type="gmfgraph:ConstantColor"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="PrimaryAttributeFigure">
+      <actualFigure xsi:type="gmfgraph:Ellipse" name="AttributeFigure" lineWidth="2">
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+        <backgroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="AlternativeAttributeFigure">
+      <actualFigure xsi:type="gmfgraph:SVGFigure" name="AlternativeAttribute" documentURI="platform:/plugin/gmf_entity_relationship_model/svg/AlternativeAttribute.svg"/>
+    </descriptors>
+    <descriptors name="ExternalLabelAttribute">
+      <actualFigure xsi:type="gmfgraph:Label" name="AttributeName_attributeFigure" text="attribute"/>
+      <accessors figure="//@figures.0/@descriptors.12/@actualFigure"/>
+    </descriptors>
+    <descriptors name="Connection_With_AttributeFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Connection_With_AttributeFigure">
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="Connection_With_OptionalAttributeFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Connection_With_OptionalAttributeFigure" lineKind="LINE_DASH">
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="Connection_With_CompositeAttributeFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Connection_With_CompositeAttributeFigure">
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="Connection_With_DerivedAttributeFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Connection_With_DerivedAttributeFigure">
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+        <children xsi:type="gmfgraph:Label" name="Connection_Title" text="D"/>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.16/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="Connection_With_MultivaluedAttributeFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Connection_With_MultivaluedAttributeFigure" targetDecoration="//@figures.0/@descriptors.17/@actualFigure/@children.0">
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+        <children xsi:type="gmfgraph:PolylineDecoration">
+          <template/>
+          <template x="-1" y="-1"/>
+          <template/>
+          <template x="-1" y="1"/>
+        </children>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="Connection_With_DependenceInIdentificationAttributeFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Connection_With_DependenceInIdentificationAttributeFigure">
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="Connection_Inclusion_RestrictionFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Connection_Inclusion_RestrictionFigure" lineKind="LINE_DASH">
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+        <children xsi:type="gmfgraph:Label" name="Connection_Title_Inclusion" text="{Inclusion}"/>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.19/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="Connection_Exclusion_RestrictionFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Connection_Exclusion_RestrictionFigure" lineKind="LINE_DASH">
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+        <children xsi:type="gmfgraph:Label" name="Connection_Title_Exclusion" text="{Exclusion}"/>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.20/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="CompositeAttributeFigure">
+      <actualFigure xsi:type="gmfgraph:Ellipse" name="CompositeAttributeFigure" lineWidth="2">
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+        <backgroundColor xsi:type="gmfgraph:ConstantColor"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="AttributeAttributes_compositesTargetDecoration">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="AttributeAttributes_compositesTargetDecoration">
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="ExternalLabelCompositeAttribute">
+      <actualFigure xsi:type="gmfgraph:Label" name="CompositeAttributeName_CompositeattributeFigure" text="composite attribute"/>
+      <accessors figure="//@figures.0/@descriptors.23/@actualFigure"/>
+    </descriptors>
+    <descriptors name="ConnectionDependenceInIdentificationFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Connection_With_DerivedAttributeFigure">
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+        <children xsi:type="gmfgraph:Label" name="Connection_Title_ConnectionDependenceInIdentificationFigure" text="Dependence in identification"/>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.24/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="Connection_Inclusiveness_RestrictionFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Connection_Inclusiveness_RestrictionFigure" targetDecoration="//@figures.0/@descriptors.25/@actualFigure/@children.0">
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+        <children xsi:type="gmfgraph:PolylineDecoration" name="Inclusiveness">
+          <template/>
+          <template x="-1" y="-1"/>
+          <template/>
+          <template x="-1" y="1"/>
+        </children>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="Connection_Exclusiveness_RestrictionFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Connection_Exclusiveness_RestrictionFigure">
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="GeneralizationPartialOverlappedFigure">
+      <actualFigure xsi:type="gmfgraph:SVGFigure" name="GeneralizationPartialOverlapped" documentURI="platform:/plugin/gmf_entity_relationship_model/svg/Generalization1.svg"/>
+    </descriptors>
+    <descriptors name="GeneralizationTotalOverlappedFigure">
+      <actualFigure xsi:type="gmfgraph:SVGFigure" name="GeneralizationTotalOverlapped" documentURI="platform:/plugin/gmf_entity_relationship_model/svg/Generalization2.svg"/>
+    </descriptors>
+    <descriptors name="GeneralizationPartialExclusiveFigure">
+      <actualFigure xsi:type="gmfgraph:SVGFigure" name="GeneralizationPartialExclusive" documentURI="platform:/plugin/gmf_entity_relationship_model/svg/Generalization3.svg"/>
+    </descriptors>
+    <descriptors name="GeneralizationTotalExclusiveFigure">
+      <actualFigure xsi:type="gmfgraph:SVGFigure" name="GeneralizationTotalExclusive" documentURI="platform:/plugin/gmf_entity_relationship_model/svg/Generalization4.svg"/>
+    </descriptors>
+    <descriptors name="Connection_GeneralizationFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Connection_GeneralizationFigure">
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+      </actualFigure>
+    </descriptors>
+  </figures>
+  <nodes name="Entity" figure="EntityFigure"/>
+  <nodes name="WeakEntity" figure="WeakEntityFigure"/>
+  <nodes name="Relationship" figure="RelationshipFigure"/>
+  <nodes name="WeakExistenceRelationship" figure="WeakExistenceRelationshipFigure"/>
+  <nodes name="WeakIdentificationRelationship" figure="WeakIdentificationRelationshipFigure"/>
+  <nodes name="Attribute" figure="AttributeFigure"/>
+  <nodes name="PrimaryAttribute" figure="PrimaryAttributeFigure"/>
+  <nodes name="AlternativeAttribute" figure="AlternativeAttributeFigure"/>
+  <nodes name="CompositeAttribute" figure="CompositeAttributeFigure"/>
+  <nodes name="Generalization" figure="GeneralizationPartialOverlappedFigure"/>
+  <nodes name="Generalization2" figure="GeneralizationTotalOverlappedFigure"/>
+  <nodes name="Generalization3" figure="GeneralizationPartialExclusiveFigure"/>
+  <nodes name="Generalization4" figure="GeneralizationTotalExclusiveFigure"/>
+  <connections name="Connection_Generalization_Entity" figure="Connection_Generalization_EntityFigure"/>
+  <connections name="Connection_Entity2Relationship" figure="Connection_Entity2RelationshipFigure"/>
+  <connections name="Connection_Relationship2Entity" figure="Connection_Relationship2EntityFigure"/>
+  <connections name="Connection_With_Attribute" figure="Connection_With_AttributeFigure"/>
+  <connections name="Connection_With_OptionalAttribute" figure="Connection_With_OptionalAttributeFigure"/>
+  <connections name="Connection_With_CompositeAttribute" figure="Connection_With_CompositeAttributeFigure"/>
+  <connections name="Connection_With_DerivedAttribute" figure="Connection_With_DerivedAttributeFigure"/>
+  <connections name="Connection_With_MultivaluedAttribute" figure="Connection_With_MultivaluedAttributeFigure"/>
+  <connections name="Connection_With_DependenceInIdentificationAttribute" figure="Connection_With_DependenceInIdentificationAttributeFigure"/>
+  <connections name="Connection_Inclusion_RestrictionAttribute" figure="Connection_Inclusion_RestrictionFigure"/>
+  <connections name="Connection_Exclusion_RestrictionAttribute" figure="Connection_Exclusion_RestrictionFigure"/>
+  <connections name="AttributeAttributes_composites" figure="AttributeAttributes_compositesTargetDecoration"/>
+  <connections name="ConnectionDependenceInIdentification" figure="ConnectionDependenceInIdentificationFigure"/>
+  <connections name="Connection_Inclusiveness_RestrictionConnection" figure="Connection_Inclusiveness_RestrictionFigure"/>
+  <connections name="Connection_Exclusiveness_RestrictionConnection" figure="Connection_Exclusiveness_RestrictionFigure"/>
+  <connections name="Connection_GeneralizationConnection" figure="Connection_GeneralizationFigure"/>
+  <labels name="EntityName_entity" figure="EntityFigure" elementIcon="false" accessor="//@figures.0/@descriptors.0/@accessors.0"/>
+  <labels name="WeakEntityName_entity" figure="WeakEntityFigure" elementIcon="false" accessor="//@figures.0/@descriptors.1/@accessors.0"/>
+  <labels name="RelationshipName_relationship" figure="RelationshipFigure" elementIcon="false" accessor="//@figures.0/@descriptors.2/@accessors.0"/>
+  <labels name="WeakExistenceRelationshipName_relationship" figure="WeakExistenceRelationshipFigure" elementIcon="false" accessor="//@figures.0/@descriptors.3/@accessors.0"/>
+  <labels name="WeakIdentificationRelationshipName_relationship" figure="WeakIdentificationRelationshipFigure" elementIcon="false" accessor="//@figures.0/@descriptors.4/@accessors.0"/>
+  <labels name="CardinalityRelationship" figure="CardinalityRelationshipFigure" affixedParentSide="NSEW" elementIcon="false"/>
+  <labels name="Connection_Entity2RelationshipRole" figure="Connection_Entity2RelationshipFigure" elementIcon="false" accessor="//@figures.0/@descriptors.6/@accessors.0">
+    <facets xsi:type="gmfgraph:AlignmentFacet" alignment="CENTER"/>
+    <facets xsi:type="gmfgraph:LabelOffsetFacet" x="10" y="10"/>
+  </labels>
+  <labels name="Connection_Entity2Relationship_cardinality" figure="Connection_Entity2RelationshipFigure" elementIcon="false" accessor="//@figures.0/@descriptors.6/@accessors.1">
+    <facets xsi:type="gmfgraph:AlignmentFacet" alignment="END"/>
+    <facets xsi:type="gmfgraph:LabelOffsetFacet" x="5" y="10"/>
+  </labels>
+  <labels name="Connection_Relationship2EntityRole" figure="Connection_Relationship2EntityFigure" elementIcon="false" accessor="//@figures.0/@descriptors.7/@accessors.0">
+    <facets xsi:type="gmfgraph:AlignmentFacet" alignment="CENTER"/>
+    <facets xsi:type="gmfgraph:LabelOffsetFacet" x="10" y="10"/>
+  </labels>
+  <labels name="Connection_Relationship2Entity_cardinality" figure="Connection_Entity2RelationshipFigure" elementIcon="false" accessor="//@figures.0/@descriptors.7/@accessors.1">
+    <facets xsi:type="gmfgraph:AlignmentFacet"/>
+    <facets xsi:type="gmfgraph:LabelOffsetFacet" x="5" y="10"/>
+  </labels>
+  <labels name="Connection_Generalization_Entity_cardinality" figure="Connection_Generalization_EntityFigure" elementIcon="false" accessor="//@figures.0/@descriptors.8/@accessors.0">
+    <facets xsi:type="gmfgraph:AlignmentFacet"/>
+    <facets xsi:type="gmfgraph:LabelOffsetFacet" x="5" y="10"/>
+  </labels>
+  <labels name="AttributeName_attribute" figure="ExternalLabelAttribute" elementIcon="false"/>
+  <labels name="Connection_Entity_RelationshipRole" figure="Connection_Entity2RelationshipFigure" elementIcon="false" accessor="//@figures.0/@descriptors.6/@accessors.0">
+    <facets xsi:type="gmfgraph:AlignmentFacet" alignment="CENTER"/>
+    <facets xsi:type="gmfgraph:LabelOffsetFacet" x="10" y="10"/>
+  </labels>
+  <labels name="Connection_Title" figure="Connection_With_DerivedAttributeFigure" elementIcon="false" accessor="//@figures.0/@descriptors.16/@accessors.0">
+    <facets xsi:type="gmfgraph:AlignmentFacet" alignment="CENTER"/>
+    <facets xsi:type="gmfgraph:LabelOffsetFacet" x="10" y="10"/>
+  </labels>
+  <labels name="Connection_Title_Inclusion" figure="Connection_Inclusion_RestrictionFigure" elementIcon="false" accessor="//@figures.0/@descriptors.19/@accessors.0">
+    <facets xsi:type="gmfgraph:AlignmentFacet" alignment="CENTER"/>
+    <facets xsi:type="gmfgraph:LabelOffsetFacet" x="10" y="10"/>
+  </labels>
+  <labels name="Connection_Title_Exclusion" figure="Connection_Exclusion_RestrictionFigure" elementIcon="false" accessor="//@figures.0/@descriptors.20/@accessors.0">
+    <facets xsi:type="gmfgraph:AlignmentFacet" alignment="CENTER"/>
+    <facets xsi:type="gmfgraph:LabelOffsetFacet" x="10" y="10"/>
+  </labels>
+  <labels name="CompositeAttributeName_Compositeattribute" figure="ExternalLabelCompositeAttribute" elementIcon="false"/>
+</gmfgraph:Canvas>

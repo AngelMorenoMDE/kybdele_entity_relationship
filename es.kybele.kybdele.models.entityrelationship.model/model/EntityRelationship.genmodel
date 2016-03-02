@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/gmf_entity_relationship_model/src" modelPluginID="gmf_entity_relationship_model"
+    modelName="EntityRelationship" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="7.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>EntityRelationship.ecore</foreignModel>
+  <genPackages prefix="Entityrelationship" disposableProviderFactory="true" ecorePackage="EntityRelationship.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="EntityRelationship.ecore#//TypeEntity">
+      <genEnumLiterals ecoreEnumLiteral="EntityRelationship.ecore#//TypeEntity/Weak"/>
+      <genEnumLiterals ecoreEnumLiteral="EntityRelationship.ecore#//TypeEntity/Regular"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="EntityRelationship.ecore#//TypeAttribute">
+      <genEnumLiterals ecoreEnumLiteral="EntityRelationship.ecore#//TypeAttribute/Normal"/>
+      <genEnumLiterals ecoreEnumLiteral="EntityRelationship.ecore#//TypeAttribute/Composite"/>
+      <genEnumLiterals ecoreEnumLiteral="EntityRelationship.ecore#//TypeAttribute/Multivalued"/>
+      <genEnumLiterals ecoreEnumLiteral="EntityRelationship.ecore#//TypeAttribute/Optional"/>
+      <genEnumLiterals ecoreEnumLiteral="EntityRelationship.ecore#//TypeAttribute/Derived"/>
+      <genEnumLiterals ecoreEnumLiteral="EntityRelationship.ecore#//TypeAttribute/Dependence_in_identification"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="EntityRelationship.ecore#//TypeIdentifier">
+      <genEnumLiterals ecoreEnumLiteral="EntityRelationship.ecore#//TypeIdentifier/NoIdentifier"/>
+      <genEnumLiterals ecoreEnumLiteral="EntityRelationship.ecore#//TypeIdentifier/PrimaryIdentifier"/>
+      <genEnumLiterals ecoreEnumLiteral="EntityRelationship.ecore#//TypeIdentifier/AlternativeIdentifier"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="EntityRelationship.ecore#//TypeRelationship">
+      <genEnumLiterals ecoreEnumLiteral="EntityRelationship.ecore#//TypeRelationship/Regular"/>
+      <genEnumLiterals ecoreEnumLiteral="EntityRelationship.ecore#//TypeRelationship/Weak_dependence_in_existence"/>
+      <genEnumLiterals ecoreEnumLiteral="EntityRelationship.ecore#//TypeRelationship/Weak_dependence_in_identification"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="EntityRelationship.ecore#//TypeRestriction">
+      <genEnumLiterals ecoreEnumLiteral="EntityRelationship.ecore#//TypeRestriction/Exclusion"/>
+      <genEnumLiterals ecoreEnumLiteral="EntityRelationship.ecore#//TypeRestriction/Inclusion"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="EntityRelationship.ecore#//TypeRestriction2">
+      <genEnumLiterals ecoreEnumLiteral="EntityRelationship.ecore#//TypeRestriction2/Exclusiveness"/>
+      <genEnumLiterals ecoreEnumLiteral="EntityRelationship.ecore#//TypeRestriction2/Inclusiveness"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="EntityRelationship.ecore#//TypeRestrictionInheritance1">
+      <genEnumLiterals ecoreEnumLiteral="EntityRelationship.ecore#//TypeRestrictionInheritance1/Total"/>
+      <genEnumLiterals ecoreEnumLiteral="EntityRelationship.ecore#//TypeRestrictionInheritance1/Partial"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="EntityRelationship.ecore#//TypeRestrictionInheritance2">
+      <genEnumLiterals ecoreEnumLiteral="EntityRelationship.ecore#//TypeRestrictionInheritance2/Exclusive"/>
+      <genEnumLiterals ecoreEnumLiteral="EntityRelationship.ecore#//TypeRestrictionInheritance2/Overlapped"/>
+    </genEnums>
+    <genClasses ecoreClass="EntityRelationship.ecore#//Entity_Relationship_Model">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EntityRelationship.ecore#//Entity_Relationship_Model/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EntityRelationship.ecore#//Entity_Relationship_Model/ERM_Has_E"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EntityRelationship.ecore#//Entity_Relationship_Model/ERM_Has_Rt"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EntityRelationship.ecore#//Entity_Relationship_Model/ERM_Has_ConnectionEntity2Relationship"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EntityRelationship.ecore#//Entity_Relationship_Model/ERM_Has_ConnectionRelationship2Entity"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EntityRelationship.ecore#//Entity_Relationship_Model/ERM_HasConnectionEntityRelationship2Attribute"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EntityRelationship.ecore#//Entity_Relationship_Model/ERM_Has_Gen"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EntityRelationship.ecore#//Entity_Relationship_Model/ERM_Has_Rt2"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EntityRelationship.ecore#//Entity_Relationship_Model/ERM_Has_CEA"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EntityRelationship.ecore#//Entity_Relationship_Model/ERM_Has_At"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EntityRelationship.ecore#//Entity_Relationship_Model/ERM_Has_G"/>
+    </genClasses>
+    <genClasses ecoreClass="EntityRelationship.ecore#//Elements_with_Attributes">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EntityRelationship.ecore#//Elements_with_Attributes/connected_with_attribute"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference EntityRelationship.ecore#//Elements_with_Attributes/inEntityRelationshipModel"/>
+    </genClasses>
+    <genClasses ecoreClass="EntityRelationship.ecore#//Entity">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EntityRelationship.ecore#//Entity/name_entity"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EntityRelationship.ecore#//Entity/type_entity"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EntityRelationship.ecore#//Entity/entity_connected_to_entity2relationship"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EntityRelationship.ecore#//Entity/entity_connected_to_relationship2entity"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EntityRelationship.ecore#//Entity/subclass_generalizations"/>
+    </genClasses>
+    <genClasses ecoreClass="EntityRelationship.ecore#//Relationship">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EntityRelationship.ecore#//Relationship/name_relationship"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EntityRelationship.ecore#//Relationship/order"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EntityRelationship.ecore#//Relationship/cardinality"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EntityRelationship.ecore#//Relationship/type_relationship"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EntityRelationship.ecore#//Relationship/source_restrictions"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EntityRelationship.ecore#//Relationship/target_restrictions"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EntityRelationship.ecore#//Relationship/relationship_connected_to_entity2relationship"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EntityRelationship.ecore#//Relationship/relationship_connected_to_relationship2entity"/>
+    </genClasses>
+    <genClasses ecoreClass="EntityRelationship.ecore#//Attribute">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EntityRelationship.ecore#//Attribute/name_attribute"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EntityRelationship.ecore#//Attribute/identifier"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EntityRelationship.ecore#//Attribute/attributes_composites"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EntityRelationship.ecore#//Attribute/attributes_identification"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EntityRelationship.ecore#//Attribute/connected"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EntityRelationship.ecore#//Attribute/inAttribute"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EntityRelationship.ecore#//Attribute/inEntityRelationshipModel"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EntityRelationship.ecore#//Attribute/attribute_connected_to_conection_entityrelationship_to_attribute"/>
+    </genClasses>
+    <genClasses ecoreClass="EntityRelationship.ecore#//Attribute_Composite">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EntityRelationship.ecore#//Attribute_Composite/name_at_composite"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EntityRelationship.ecore#//Attribute_Composite/identifier_at_composite"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EntityRelationship.ecore#//Attribute_Composite/attributes"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference EntityRelationship.ecore#//Attribute_Composite/inAttribute"/>
+    </genClasses>
+    <genClasses ecoreClass="EntityRelationship.ecore#//Relationships_Restriction">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EntityRelationship.ecore#//Relationships_Restriction/type_restriction"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EntityRelationship.ecore#//Relationships_Restriction/source_relationship"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EntityRelationship.ecore#//Relationships_Restriction/target_relationship"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference EntityRelationship.ecore#//Relationships_Restriction/inEntityRelationshipModel"/>
+    </genClasses>
+    <genClasses ecoreClass="EntityRelationship.ecore#//Connection_E_R_Restriction">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EntityRelationship.ecore#//Connection_E_R_Restriction/connection_source_entity_relationship"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EntityRelationship.ecore#//Connection_E_R_Restriction/type_restriction"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EntityRelationship.ecore#//Connection_E_R_Restriction/connection_target_entity_relationship"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference EntityRelationship.ecore#//Connection_E_R_Restriction/inEntityRelationshipModel"/>
+    </genClasses>
+    <genClasses ecoreClass="EntityRelationship.ecore#//Generalization">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EntityRelationship.ecore#//Generalization/restriction_inheritance_1"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EntityRelationship.ecore#//Generalization/restriction_inheritance_2"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EntityRelationship.ecore#//Generalization/subclasses"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EntityRelationship.ecore#//Generalization/superclass"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference EntityRelationship.ecore#//Generalization/inEntityRelationshipModel"/>
+    </genClasses>
+    <genClasses ecoreClass="EntityRelationship.ecore#//Connection_With_Attribute">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EntityRelationship.ecore#//Connection_With_Attribute/type_attribute"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EntityRelationship.ecore#//Connection_With_Attribute/connection_attribute"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EntityRelationship.ecore#//Connection_With_Attribute/element"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference EntityRelationship.ecore#//Connection_With_Attribute/inEntityRelationshipModel"/>
+    </genClasses>
+    <genClasses ecoreClass="EntityRelationship.ecore#//Connection_Generalization_Entity">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EntityRelationship.ecore#//Connection_Generalization_Entity/minimum_cardinality"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EntityRelationship.ecore#//Connection_Generalization_Entity/maximum_cardinality"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EntityRelationship.ecore#//Connection_Generalization_Entity/Connection_Generalization"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EntityRelationship.ecore#//Connection_Generalization_Entity/Connection_Entity"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference EntityRelationship.ecore#//Connection_Generalization_Entity/inEntityRelationshipModel"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="EntityRelationship.ecore#//Connection_EntityRelationship">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EntityRelationship.ecore#//Connection_EntityRelationship/role"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EntityRelationship.ecore#//Connection_EntityRelationship/minimum_cardinality"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EntityRelationship.ecore#//Connection_EntityRelationship/maximum_cardinality"/>
+    </genClasses>
+    <genClasses ecoreClass="EntityRelationship.ecore#//Connection_Entity2Relationship">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EntityRelationship.ecore#//Connection_Entity2Relationship/source_entity"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EntityRelationship.ecore#//Connection_Entity2Relationship/target_relationship"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference EntityRelationship.ecore#//Connection_Entity2Relationship/inEntityRelationshipModel"/>
+    </genClasses>
+    <genClasses ecoreClass="EntityRelationship.ecore#//Connection_Relationship2Entity">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EntityRelationship.ecore#//Connection_Relationship2Entity/source_relationship"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EntityRelationship.ecore#//Connection_Relationship2Entity/target_entity"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference EntityRelationship.ecore#//Connection_Relationship2Entity/inEntityRelationshipModel"/>
+    </genClasses>
+    <genClasses ecoreClass="EntityRelationship.ecore#//Connection_ConnectionEntityRelationship2Attribute">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EntityRelationship.ecore#//Connection_ConnectionEntityRelationship2Attribute/source_connection"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EntityRelationship.ecore#//Connection_ConnectionEntityRelationship2Attribute/target_attribute"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference EntityRelationship.ecore#//Connection_ConnectionEntityRelationship2Attribute/inEntityRelationshipModel"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

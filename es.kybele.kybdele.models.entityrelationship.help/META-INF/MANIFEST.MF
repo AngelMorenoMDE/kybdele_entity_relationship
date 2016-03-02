@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Entiry Relationship GMF Diagrammer - Help Plug-In
+Bundle-SymbolicName: es.kybele.kybdele.models.entityrelationship.help;singleton:=true
+Bundle-Version: 0.4.0.stable
+Bundle-Vendor: Grupo de Investigación Kybele

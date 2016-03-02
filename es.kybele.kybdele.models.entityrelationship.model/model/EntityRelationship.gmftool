@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="ASCII"?>
+<gmftool:ToolRegistry
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:gmftool="http://www.eclipse.org/gmf/2005/ToolDefinition">
+  <palette
+      title="entityrelationshipPalette">
+    <tools
+        xsi:type="gmftool:ToolGroup"
+        title="Entities"
+        collapsible="true"
+        stack="true">
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Regular Entity"
+          description="Create new Regular Entity">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Entity1.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Entity1.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Weak Entity"
+          description="Create new Weak Entity">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Entity2.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Entity2.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+      </tools>
+    </tools>
+    <tools
+        xsi:type="gmftool:ToolGroup"
+        title="Relationships"
+        description=""
+        collapsible="true"
+        stack="true">
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Regular Relationship"
+          description="Create new Regular Relationship">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Relationship1.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Relationship1.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Weak Relationship dependence in existence"
+          description="Create new Weak Relationship dependence in existence">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Relationship3.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Relationship3.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Weak Relationship dependence in identification"
+          description="Create new Weak Relationship dependence in identification">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Relationship2.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Relationship2.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:PaletteSeparator"/>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Connection Entity-Relationship"
+          description="Create new Connection Entity-Relationship">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Line_Solid.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Line_Solid.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+      </tools>
+    </tools>
+    <tools
+        xsi:type="gmftool:ToolGroup"
+        title="Generalizations"
+        collapsible="true">
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Generalization Partial and Overlapped"
+          description="Create new Generalization Partial and Overlapped">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Generalization1.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Generalization1.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Generalization Total and Overlapped"
+          description="Create new Generalization Total and Overlapped">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Generalization2.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Generalization2.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Generalization Partial and Exclusive"
+          description="Create new Generalization Partial and Exclusive">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Generalization3.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Generalization3.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Generalization Total and Exclusive"
+          description="Create new Generalization Total and Exclusive">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Generalization4.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Generalization4.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:PaletteSeparator"/>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Connection Superclass Generalization"
+          description="Create new Connection Superclass Generalization">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Line_Solid.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Line_Solid.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Connection Subclass Generalization"
+          description="Create new Connection Subclass Generalization">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Line_Solid.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Line_Solid.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+      </tools>
+    </tools>
+    <tools
+        xsi:type="gmftool:ToolGroup"
+        title="Attributes"
+        collapsible="true">
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Primary Attribute"
+          description="Create new Primary Attribute">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Attribute1.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Attribute1.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Alternative Attribute"
+          description="Create new Alternative Attribute">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Attribute2.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Attribute2.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="No Identifier Attribute"
+          description="Create new No Identifier Attribute">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Attribute3.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Attribute3.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Composite Attribute"
+          description="Create new Composite Attribute">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Attribute4.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Attribute4.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:PaletteSeparator"/>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Connection Normal Attribute"
+          description="Create new Connection Normal Attribute">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Line_Solid.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Line_Solid.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Connection Optional Attribute"
+          description="Create new Connection Optional Attribute">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Line_Dash.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Line_Dash.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Connection Composite Attribute"
+          description="Create new Connection Composite Attribute">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Line_Solid.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Line_Solid.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Connection Derived Attribute"
+          description="Create new Connection Derived Attribute">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Derived.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Derived.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Connection Multivalued Attribute"
+          description="Create new Connection Multivalued Attribute">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Arrow.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Arrow.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Connection Dependence in Identification Attribute"
+          description="Create new Connection Dependence in Identification Attribute">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Identification.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Identification.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:PaletteSeparator"/>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Subconnection Composite Attribute"
+          description="Create new Suconnection Composite Attribute">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Line_Solid.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Line_Solid.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Subconnection Dependence in identification"
+          description="Create new Suconnection Dependence in identification">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Identification.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Identification.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+      </tools>
+    </tools>
+    <tools
+        xsi:type="gmftool:ToolGroup"
+        title="Relationship Restrictions"
+        collapsible="true">
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Exclusion"
+          description="Create new Relationship Restriction: Exclusion">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Exclusion.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Exclusion.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Inclusion"
+          description="Create new Relationship Restriction: Inclusion">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Inclusion.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Inclusion.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+      </tools>
+    </tools>
+    <tools
+        xsi:type="gmftool:ToolGroup"
+        title="Connection Entity-Relationship Restrictions"
+        collapsible="true">
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Exclusiveness"
+          description="Create new Connection Entity-Relationship Restriction: Exclusiveness">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Line_Solid.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Line_Solid.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Inclusiveness"
+          description="Create new Connection Entity-Relationship Restriction: Inclusiveness">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Arrow.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/full/obj16/Arrow.gif"
+            bundle="gmf_entity_relationship_model.edit"/>
+      </tools>
+    </tools>
+  </palette>
+</gmftool:ToolRegistry>

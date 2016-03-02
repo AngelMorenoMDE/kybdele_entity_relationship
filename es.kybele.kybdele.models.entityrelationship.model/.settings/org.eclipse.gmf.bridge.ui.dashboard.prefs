@@ -1,0 +1,7 @@
+eclipse.preferences.version=1
+gmf_dashboard/domainGenerationModel=platform\:/resource/es.kybele.kybdele.models.entityrelationship.model/model/EntityRelationship.genmodel
+gmf_dashboard/domainModel=platform\:/resource/es.kybele.kybdele.models.entityrelationship.model/model/EntityRelationship.ecore
+gmf_dashboard/generationModel=platform\:/resource/es.kybele.kybdele.models.entityrelationship.model/model/EntityRelationship.gmfgen
+gmf_dashboard/graphicalDefinitionModel=platform\:/resource/es.kybele.kybdele.models.entityrelationship.model/model/EntityRelationship.gmfgraph
+gmf_dashboard/mappingModel=platform\:/resource/es.kybele.kybdele.models.entityrelationship.model/model/EntityRelationship.gmfmap
+gmf_dashboard/toolingDefinitionModel=platform\:/resource/es.kybele.kybdele.models.entityrelationship.model/model/EntityRelationship.gmftool

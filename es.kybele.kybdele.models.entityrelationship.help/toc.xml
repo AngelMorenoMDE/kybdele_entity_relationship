@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="KyBDele - Eclipse-Based E/R Editor" topic="html/manuals/Introduction.html">
+   <topic href="html/manuals/Introduction.html" label="Primeros Pasos">
+      <topic href="html/manuals/Projects.html" label="1. Crear un nuevo Diagrama E/R">
+      </topic>
+      <topic href="html/manuals/Entities.html" label="2. Crear Entidades">
+      </topic>
+      <topic href="html/manuals/Attributes.html" label="3. Crear Atributos de una entidad">
+      </topic>
+      <topic href="html/manuals/Relations.html" label="4. Crear Relaciones entre entidades">
+      </topic>
+      <topic href="html/manuals/Generalizations.html" label="5. Crear Generalizaciones entre entidades">
+      </topic>
+   </topic>
+   <topic href="html/manuals/Export.html" label="Exportar diagrama E/R a imagen">
+   </topic>
+</toc>
